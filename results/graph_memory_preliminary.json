@@ -1,0 +1,3460 @@
+[
+  {
+    "question_id": "FR_001",
+    "category": "FACT_RETENTION",
+    "difficulty": "easy",
+    "expected_information": [
+      "computer science",
+      "MIT"
+    ],
+    "relevant_memory_ids": [
+      "FR_001_msg_1"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "43d65cdb-aa6d-4ecd-8e08-d158d67489c5",
+        "memory_source_id": "FR_001_msg_1",
+        "content": "I'm studying computer science at MIT.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "FR_001_msg_1"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "computer science": false,
+      "MIT": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.42,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 1.0,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 1.0,
+    "legacy_keyword_precision": 2.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 5,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests basic retention of user's educational background stated in a single session."
+  },
+  {
+    "question_id": "FR_002",
+    "category": "FACT_RETENTION",
+    "difficulty": "easy",
+    "expected_information": [
+      "golden retriever",
+      "Biscuit",
+      "cat",
+      "Whiskers"
+    ],
+    "relevant_memory_ids": [
+      "FR_002_msg_2",
+      "FR_002_msg_0",
+      "FR_002_msg_1"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "86bde7f7-73f0-4613-9337-27e4e47c7de7",
+        "memory_source_id": "FR_002_msg_1",
+        "content": "She's about 10 weeks old. We also have a cat named Whiskers who is 3 years old.",
+        "similarity": 0.5,
+        "metadata": {
+          "memory_source_id": "FR_002_msg_1"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "golden retriever": false,
+      "Biscuit": false,
+      "cat": false,
+      "Whiskers": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.41,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.3333,
+    "recall_at_3": 0.3333,
+    "recall_at_5": 0.3333,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 0.5,
+    "legacy_keyword_precision": 2.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 6,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests retention of multiple related facts (two pets with names and types)."
+  },
+  {
+    "question_id": "FR_003",
+    "category": "FACT_RETENTION",
+    "difficulty": "medium",
+    "expected_information": [
+      "June 15th",
+      "Lakeside Gardens",
+      "Portland",
+      "Jordan",
+      "120"
+    ],
+    "relevant_memory_ids": [
+      "FR_003_msg_0",
+      "FR_003_msg_2",
+      "FR_003_msg_1"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "3cbb7ecc-61a2-426f-8136-d829882c2dbc",
+        "memory_source_id": "FR_003_msg_0",
+        "content": "I'm planning my wedding for June 15th next year.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "FR_003_msg_0"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "June 15th": false,
+      "Lakeside Gardens": false,
+      "Portland": false,
+      "Jordan": false,
+      "120": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.33,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.3333,
+    "recall_at_3": 0.3333,
+    "recall_at_5": 0.3333,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 0.2,
+    "legacy_keyword_precision": 1.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 7,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests retention of multiple specific details from a single conversation topic."
+  },
+  {
+    "question_id": "FR_004",
+    "category": "FACT_RETENTION",
+    "difficulty": "easy",
+    "expected_information": [
+      "senior software engineer",
+      "Stripe",
+      "payments infrastructure"
+    ],
+    "relevant_memory_ids": [
+      "FR_004_msg_1",
+      "FR_004_msg_0"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "0826fcf2-50d6-437b-bf2d-e3b39d268b22",
+        "memory_source_id": "FR_004_msg_0",
+        "content": "I work as a senior software engineer at Stripe.",
+        "similarity": 0.5,
+        "metadata": {
+          "memory_source_id": "FR_004_msg_0"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "senior software engineer": false,
+      "Stripe": false,
+      "payments infrastructure": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.44,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.5,
+    "recall_at_3": 0.5,
+    "recall_at_5": 0.5,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 0.6667,
+    "legacy_keyword_precision": 2.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 7,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests retention of professional information."
+  },
+  {
+    "question_id": "FR_005",
+    "category": "FACT_RETENTION",
+    "difficulty": "medium",
+    "expected_information": [
+      "peanut allergy",
+      "lactose intolerant",
+      "vegetarian"
+    ],
+    "relevant_memory_ids": [
+      "FR_005_msg_0",
+      "FR_005_msg_1"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "c7005de2-5010-4fd5-b550-61cd71a3fbd1",
+        "memory_source_id": "FR_005_msg_1",
+        "content": "No, those are the main ones. I'm also vegetarian by choice.",
+        "similarity": 0.5,
+        "metadata": {
+          "memory_source_id": "FR_005_msg_1"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "peanut allergy": false,
+      "lactose intolerant": false,
+      "vegetarian": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.54,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.5,
+    "recall_at_3": 0.5,
+    "recall_at_5": 0.5,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 0.3333,
+    "legacy_keyword_precision": 1.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 7,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests retention of health-critical information (allergies and dietary preferences)."
+  },
+  {
+    "question_id": "FR_006",
+    "category": "FACT_RETENTION",
+    "difficulty": "medium",
+    "expected_information": [
+      "Boston Marathon",
+      "3 hours 15 minutes"
+    ],
+    "relevant_memory_ids": [
+      "FR_006_msg_0",
+      "FR_006_msg_2"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "8d6fc366-1ec3-46a7-aa14-1b16d5e2bd9a",
+        "memory_source_id": "FR_006_msg_1",
+        "content": "Pretty well. I run about 40 miles a week right now. My best marathon time is 3 hours 25 minutes.",
+        "similarity": 2.0,
+        "metadata": {
+          "memory_source_id": "FR_006_msg_1"
+        }
+      },
+      {
+        "memory_id": "e6aa8276-7838-4a64-aeb6-23ebebb23a59",
+        "memory_source_id": "FR_006_msg_0",
+        "content": "I'm training for the Boston Marathon next April.",
+        "similarity": 2.0,
+        "metadata": {
+          "memory_source_id": "FR_006_msg_0"
+        }
+      },
+      {
+        "memory_id": "98af2e0a-510b-4f44-8a5b-cb84daa3b02b",
+        "memory_source_id": "FR_006_msg_3",
+        "content": "I also do cross-training with swimming twice a week at the YMCA.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "FR_006_msg_3"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "Boston Marathon": false,
+      "3 hours 15 minutes": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.71,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.5,
+    "recall_at_5": 0.5,
+    "precision_at_1": 0.0,
+    "precision_at_3": 0.3333,
+    "precision_at_5": 0.3333,
+    "legacy_keyword_recall": 0.5,
+    "legacy_keyword_precision": 0.3333,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 8,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests retention of athletic goals and training details."
+  },
+  {
+    "question_id": "FR_007",
+    "category": "FACT_RETENTION",
+    "difficulty": "hard",
+    "expected_information": [
+      "Emma",
+      "7",
+      "Liam",
+      "4",
+      "Nina",
+      "pediatrician"
+    ],
+    "relevant_memory_ids": [
+      "FR_007_msg_1",
+      "FR_007_msg_3",
+      "FR_007_msg_0",
+      "FR_007_msg_2"
+    ],
+    "retrieved_memories": [],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "Emma": false,
+      "7": false,
+      "Liam": false,
+      "4": false,
+      "Nina": false,
+      "pediatrician": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.23,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.0,
+    "recall_at_5": 0.0,
+    "precision_at_1": 0.0,
+    "precision_at_3": 0.0,
+    "precision_at_5": 0.0,
+    "legacy_keyword_recall": null,
+    "legacy_keyword_precision": null,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 8,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests retention of complex family structure with multiple members, ages, and occupations."
+  },
+  {
+    "question_id": "LRR_001",
+    "category": "LONG_RANGE_RETRIEVAL",
+    "difficulty": "medium",
+    "expected_information": [
+      "Maple Street",
+      "Boulder",
+      "Colorado"
+    ],
+    "relevant_memory_ids": [
+      "LRR_001_msg_0"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "dd7cb8c1-ce40-4aaa-900b-e6eb755e1951",
+        "memory_source_id": "LRR_001_msg_0",
+        "content": "I just bought a house on Maple Street in Boulder, Colorado.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "LRR_001_msg_0"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "Maple Street": false,
+      "Boulder": false,
+      "Colorado": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.36,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 1.0,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 1.0,
+    "legacy_keyword_precision": 3.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 12,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests retrieval of a fact stated early in the conversation, buried under many unrelated biology discussion turns."
+  },
+  {
+    "question_id": "LRR_002",
+    "category": "LONG_RANGE_RETRIEVAL",
+    "difficulty": "medium",
+    "expected_information": [
+      "Marcus",
+      "Berlin"
+    ],
+    "relevant_memory_ids": [
+      "LRR_002_msg_0"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "a4df3670-9443-4b64-981d-925bf85c6c50",
+        "memory_source_id": "LRR_002_msg_0",
+        "content": "My best friend's name is Marcus and he lives in Berlin.",
+        "similarity": 4.5,
+        "metadata": {
+          "memory_source_id": "LRR_002_msg_0"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "Marcus": false,
+      "Berlin": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.29,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 1.0,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 1.0,
+    "legacy_keyword_precision": 2.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 10,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests retrieval of a personal fact stated at the very beginning, followed by extensive unrelated blockchain discussion."
+  },
+  {
+    "question_id": "LRR_003",
+    "category": "LONG_RANGE_RETRIEVAL",
+    "difficulty": "hard",
+    "expected_information": [
+      "November 3rd",
+      "Dr. Patel",
+      "City Medical Center"
+    ],
+    "relevant_memory_ids": [
+      "LRR_003_msg_0"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "0e20f55b-0580-4522-9cc3-c82317120d12",
+        "memory_source_id": "LRR_003_msg_0",
+        "content": "I have a doctor's appointment on November 3rd with Dr. Patel at the City Medical Center.",
+        "similarity": 3.0,
+        "metadata": {
+          "memory_source_id": "LRR_003_msg_0"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "November 3rd": false,
+      "Dr. Patel": false,
+      "City Medical Center": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.34,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 1.0,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 1.0,
+    "legacy_keyword_precision": 3.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 14,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests retrieval of a scheduled event stated early, buried under book and TV discussion."
+  },
+  {
+    "question_id": "LRR_004",
+    "category": "LONG_RANGE_RETRIEVAL",
+    "difficulty": "medium",
+    "expected_information": [
+      "shellfish",
+      "penicillin"
+    ],
+    "relevant_memory_ids": [
+      "LRR_004_msg_0"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "351f96a6-7704-48be-9bc0-60ef46b046bd",
+        "memory_source_id": "LRR_004_msg_0",
+        "content": "I'm allergic to shellfish and penicillin.",
+        "similarity": 0.5,
+        "metadata": {
+          "memory_source_id": "LRR_004_msg_0"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "shellfish": false,
+      "penicillin": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 1.38,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 1.0,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 1.0,
+    "legacy_keyword_precision": 2.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 9,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests retrieval of critical health information stated before extensive travel planning discussion."
+  },
+  {
+    "question_id": "LRR_005",
+    "category": "LONG_RANGE_RETRIEVAL",
+    "difficulty": "hard",
+    "expected_information": [
+      "March 31st",
+      "SAP"
+    ],
+    "relevant_memory_ids": [
+      "LRR_005_msg_0"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "e36966bd-df77-4fc8-97b4-b36e3462b5fd",
+        "memory_source_id": "LRR_005_msg_0",
+        "content": "My company's fiscal year ends on March 31st. We use SAP for our ERP system.",
+        "similarity": 5.6000000000000005,
+        "metadata": {
+          "memory_source_id": "LRR_005_msg_0"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "March 31st": false,
+      "SAP": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.41,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 1.0,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 1.0,
+    "legacy_keyword_precision": 2.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 10,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests retrieval of business information buried under a long technical discussion about APIs."
+  },
+  {
+    "question_id": "LRR_006",
+    "category": "LONG_RANGE_RETRIEVAL",
+    "difficulty": "hard",
+    "expected_information": [
+      "February 14th",
+      "orchids",
+      "dark chocolate"
+    ],
+    "relevant_memory_ids": [
+      "LRR_006_msg_0"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "ba4ebb7c-37c6-411c-82d8-bfa613a825a2",
+        "memory_source_id": "LRR_006_msg_0",
+        "content": "My sister's birthday is on February 14th. She loves orchids and dark chocolate.",
+        "similarity": 2.2,
+        "metadata": {
+          "memory_source_id": "LRR_006_msg_0"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "February 14th": false,
+      "orchids": false,
+      "dark chocolate": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.74,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 1.0,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 1.0,
+    "legacy_keyword_precision": 3.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 10,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests retrieval of personal/family detail stated at the very beginning, buried under extensive programming language comparisons."
+  },
+  {
+    "question_id": "IU_001",
+    "category": "INFORMATION_UPDATE",
+    "difficulty": "easy",
+    "expected_information": [
+      "Rust"
+    ],
+    "relevant_memory_ids": [
+      "IU_001_msg_2",
+      "IU_001_msg_3"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "493bd202-678a-4fca-8e7d-aa9446ef7651",
+        "memory_source_id": "IU_001_msg_0",
+        "content": "My favorite programming language is Python.",
+        "similarity": 3.0,
+        "metadata": {
+          "memory_source_id": "IU_001_msg_0"
+        }
+      },
+      {
+        "memory_id": "123bfbc6-88d1-4e9b-959d-fdffc387d803",
+        "memory_source_id": "IU_001_msg_3",
+        "content": "The performance gains and memory safety guarantees are incredible. Rust is now my preferred language.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "IU_001_msg_3"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "Rust": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.61,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.5,
+    "recall_at_5": 0.5,
+    "precision_at_1": 0.0,
+    "precision_at_3": 0.5,
+    "precision_at_5": 0.5,
+    "legacy_keyword_recall": 1.0,
+    "legacy_keyword_precision": 0.5,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 7,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests whether the system uses the updated preference rather than the original one."
+  },
+  {
+    "question_id": "IU_002",
+    "category": "INFORMATION_UPDATE",
+    "difficulty": "easy",
+    "expected_information": [
+      "Evanston"
+    ],
+    "relevant_memory_ids": [
+      "IU_002_msg_2"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "e645607b-eea8-4d03-a859-908e894756b5",
+        "memory_source_id": "IU_002_msg_0",
+        "content": "I live in an apartment in downtown Chicago.",
+        "similarity": 0.5,
+        "metadata": {
+          "memory_source_id": "IU_002_msg_0"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "Evanston": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.35,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.0,
+    "recall_at_5": 0.0,
+    "precision_at_1": 0.0,
+    "precision_at_3": 0.0,
+    "precision_at_5": 0.0,
+    "legacy_keyword_recall": 0.0,
+    "legacy_keyword_precision": 0.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 8,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests whether the system recognizes the location update from Chicago to Evanston."
+  },
+  {
+    "question_id": "IU_003",
+    "category": "INFORMATION_UPDATE",
+    "difficulty": "medium",
+    "expected_information": [
+      "Apple",
+      "senior product manager",
+      "Vision Pro"
+    ],
+    "relevant_memory_ids": [
+      "IU_003_msg_2",
+      "IU_003_msg_3"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "37f1cb0a-bd67-4020-90a7-462ee167c1ab",
+        "memory_source_id": "IU_003_msg_0",
+        "content": "I work at Google as a product manager.",
+        "similarity": 0.5,
+        "metadata": {
+          "memory_source_id": "IU_003_msg_0"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "Apple": false,
+      "senior product manager": false,
+      "Vision Pro": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.52,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.0,
+    "recall_at_5": 0.0,
+    "precision_at_1": 0.0,
+    "precision_at_3": 0.0,
+    "precision_at_5": 0.0,
+    "legacy_keyword_recall": 0.0,
+    "legacy_keyword_precision": 0.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 7,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests job change update from Google/Maps PM to Apple/Vision Pro senior PM."
+  },
+  {
+    "question_id": "IU_004",
+    "category": "INFORMATION_UPDATE",
+    "difficulty": "easy",
+    "expected_information": [
+      "555-0456"
+    ],
+    "relevant_memory_ids": [
+      "IU_004_msg_1"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "a2a99c1b-4c16-41fe-bd07-774b1bbcce77",
+        "memory_source_id": "IU_004_msg_0",
+        "content": "My phone number is 555-0123.",
+        "similarity": 2.0,
+        "metadata": {
+          "memory_source_id": "IU_004_msg_0"
+        }
+      },
+      {
+        "memory_id": "70be1dfc-701c-4b2c-ab4d-1c443ba5aabe",
+        "memory_source_id": "IU_004_msg_1",
+        "content": "I just got a new phone. My new number is 555-0456.",
+        "similarity": 1.2,
+        "metadata": {
+          "memory_source_id": "IU_004_msg_1"
+        }
+      },
+      {
+        "memory_id": "ed4e4166-8809-4dcf-83ec-c293cd3598b2",
+        "memory_source_id": "IU_004_msg_2",
+        "content": "Yes, the old number 555-0123 is no longer active.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "IU_004_msg_2"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "555-0456": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.72,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.0,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "precision_at_1": 0.0,
+    "precision_at_3": 0.3333,
+    "precision_at_5": 0.3333,
+    "legacy_keyword_recall": 1.0,
+    "legacy_keyword_precision": 0.3333,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 6,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests simple factual update of contact information with explicit invalidation of old data."
+  },
+  {
+    "question_id": "IU_005",
+    "category": "INFORMATION_UPDATE",
+    "difficulty": "medium",
+    "expected_information": [
+      "Mediterranean diet",
+      "heart health"
+    ],
+    "relevant_memory_ids": [
+      "IU_005_msg_2"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "5d9a1a13-8b49-4637-870c-860198512f33",
+        "memory_source_id": "IU_005_msg_0",
+        "content": "I'm following a keto diet. No carbs for me!",
+        "similarity": 2.0,
+        "metadata": {
+          "memory_source_id": "IU_005_msg_0"
+        }
+      },
+      {
+        "memory_id": "93c7d750-f36f-413a-9c55-2b52cf1f3658",
+        "memory_source_id": "IU_005_msg_2",
+        "content": "Actually, I spoke with my nutritionist Dr. Kim and she recommended I switch to a Mediterranean diet instead. It's better for my heart health.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "IU_005_msg_2"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "Mediterranean diet": false,
+      "heart health": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 1.12,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.0,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "precision_at_1": 0.0,
+    "precision_at_3": 0.5,
+    "precision_at_5": 0.5,
+    "legacy_keyword_recall": 1.0,
+    "legacy_keyword_precision": 1.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 14,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests diet change update from keto to Mediterranean, including the reason for the change."
+  },
+  {
+    "question_id": "IU_006",
+    "category": "INFORMATION_UPDATE",
+    "difficulty": "hard",
+    "expected_information": [
+      "February 1st"
+    ],
+    "relevant_memory_ids": [
+      "IU_006_msg_3"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "2484c43c-b9c5-4c65-9073-604f45ce0926",
+        "memory_source_id": "IU_006_msg_0",
+        "content": "My project deadline is December 1st.",
+        "similarity": 2.0,
+        "metadata": {
+          "memory_source_id": "IU_006_msg_0"
+        }
+      },
+      {
+        "memory_id": "d89abd0d-4a23-424e-b76a-5790d8486ce8",
+        "memory_source_id": "IU_006_msg_1",
+        "content": "We had a meeting today and the deadline has been pushed to January 15th because of the new requirements.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "IU_006_msg_1"
+        }
+      },
+      {
+        "memory_id": "2149d859-5049-40b1-86b1-9603edb8f368",
+        "memory_source_id": "IU_006_msg_3",
+        "content": "Update: I just got an email. The deadline has been moved again to February 1st.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "IU_006_msg_3"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "February 1st": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.49,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.0,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "precision_at_1": 0.0,
+    "precision_at_3": 0.3333,
+    "precision_at_5": 0.3333,
+    "legacy_keyword_recall": 1.0,
+    "legacy_keyword_precision": 0.3333,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 8,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests tracking of a value that was updated multiple times (Dec 1 -> Jan 15 -> Feb 1). Only the final value should be returned."
+  },
+  {
+    "question_id": "IU_007",
+    "category": "INFORMATION_UPDATE",
+    "difficulty": "medium",
+    "expected_information": [
+      "Dr. Chen",
+      "Riverside Clinic",
+      "internal medicine"
+    ],
+    "relevant_memory_ids": [
+      "IU_007_msg_2",
+      "IU_007_msg_3",
+      "IU_007_msg_0"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "0d1f4dec-89f1-4255-bb5e-0f0992dee4fa",
+        "memory_source_id": "IU_007_msg_0",
+        "content": "My primary doctor is Dr. Johnson at Riverside Clinic.",
+        "similarity": 2.0,
+        "metadata": {
+          "memory_source_id": "IU_007_msg_0"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "Dr. Chen": false,
+      "Riverside Clinic": false,
+      "internal medicine": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.44,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.3333,
+    "recall_at_3": 0.3333,
+    "recall_at_5": 0.3333,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 0.3333,
+    "legacy_keyword_precision": 1.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 12,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests doctor change update with explicit invalidation (retirement) and replacement details."
+  },
+  {
+    "question_id": "CI_001",
+    "category": "CONFLICTING_INFORMATION",
+    "difficulty": "easy",
+    "expected_information": [
+      "Seoul",
+      "March"
+    ],
+    "relevant_memory_ids": [
+      "CI_001_msg_3",
+      "CI_001_msg_0",
+      "CI_001_msg_2"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "691a30fb-1d33-464c-bb0d-1282882f7f32",
+        "memory_source_id": "CI_001_msg_0",
+        "content": "I'm going to Tokyo for vacation in March.",
+        "similarity": 2.0,
+        "metadata": {
+          "memory_source_id": "CI_001_msg_0"
+        }
+      },
+      {
+        "memory_id": "080141f2-170d-4043-acc1-58bf80af50e4",
+        "memory_source_id": "CI_001_msg_2",
+        "content": "Actually, I just changed my plans. We're going to Seoul instead of Tokyo.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "CI_001_msg_2"
+        }
+      },
+      {
+        "memory_id": "7940c49f-4ee6-4de5-a3ca-11f6a8b8d99c",
+        "memory_source_id": "CI_001_msg_3",
+        "content": "My friend recommended it and the flights were much cheaper. We're still going in March though.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "CI_001_msg_3"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "Seoul": false,
+      "March": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.56,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.3333,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 1.0,
+    "legacy_keyword_precision": 0.6667,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 8,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests resolution of conflicting travel destinations. The system should prefer the corrected/latest information."
+  },
+  {
+    "question_id": "CI_002",
+    "category": "CONFLICTING_INFORMATION",
+    "difficulty": "medium",
+    "expected_information": [
+      "driving"
+    ],
+    "relevant_memory_ids": [
+      "CI_002_msg_1",
+      "CI_002_msg_3"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "3fa6f09d-fc6b-4bec-85a6-ba76f7941a95",
+        "memory_source_id": "CI_002_msg_0",
+        "content": "I take the train to work every day. It's a 45-minute commute.",
+        "similarity": 1.2,
+        "metadata": {
+          "memory_source_id": "CI_002_msg_0"
+        }
+      },
+      {
+        "memory_id": "1eb94e0e-fbd7-43a6-86fa-cfe974232bca",
+        "memory_source_id": "CI_002_msg_1",
+        "content": "I usually read. But actually, since last week I've been driving to work because they changed the train schedule and it no longer works for me.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "CI_002_msg_1"
+        }
+      },
+      {
+        "memory_id": "5ed127f0-807a-4dd9-9166-50e9dbae46a7",
+        "memory_source_id": "CI_002_msg_3",
+        "content": "I do miss reading during the commute. But driving is more flexible.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "CI_002_msg_3"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "driving": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.59,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.0,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "precision_at_1": 0.0,
+    "precision_at_3": 0.6667,
+    "precision_at_5": 0.6667,
+    "legacy_keyword_recall": 1.0,
+    "legacy_keyword_precision": 0.3333,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 10,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests conflict between original commute method (train) and updated method (driving) with explicit reason for change."
+  },
+  {
+    "question_id": "CI_003",
+    "category": "CONFLICTING_INFORMATION",
+    "difficulty": "hard",
+    "expected_information": [
+      "$40,000"
+    ],
+    "relevant_memory_ids": [
+      "CI_003_msg_3"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "b429aa39-b820-4b33-a0ff-1c57d246d2c5",
+        "memory_source_id": "CI_003_msg_0",
+        "content": "My budget for the home renovation is $30,000.",
+        "similarity": 3.0,
+        "metadata": {
+          "memory_source_id": "CI_003_msg_0"
+        }
+      },
+      {
+        "memory_id": "6444e962-7df4-4f73-b1ac-1259c26c09ea",
+        "memory_source_id": "CI_003_msg_2",
+        "content": "Yes, but after getting the quotes, we've decided to increase the budget to $45,000 to include new flooring throughout the house.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "CI_003_msg_2"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "$40,000": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.79,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.0,
+    "recall_at_5": 0.0,
+    "precision_at_1": 0.0,
+    "precision_at_3": 0.0,
+    "precision_at_5": 0.0,
+    "legacy_keyword_recall": 0.0,
+    "legacy_keyword_precision": 0.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 13,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests a triple-conflicting value ($30k -> $45k -> $40k). Only the most recent value should be returned."
+  },
+  {
+    "question_id": "CI_004",
+    "category": "CONFLICTING_INFORMATION",
+    "difficulty": "easy",
+    "expected_information": [
+      "Thursday",
+      "2 PM"
+    ],
+    "relevant_memory_ids": [
+      "CI_004_msg_1"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "5b08d947-a4d7-4694-8b32-ecb027525af6",
+        "memory_source_id": "CI_004_msg_0",
+        "content": "Our team meeting is on Tuesdays at 10 AM.",
+        "similarity": 3.0,
+        "metadata": {
+          "memory_source_id": "CI_004_msg_0"
+        }
+      },
+      {
+        "memory_id": "4999b611-acfd-4408-8533-8f07a844cae2",
+        "memory_source_id": "CI_004_msg_1",
+        "content": "Yes, weekly. Oh wait, I just got a message from my manager. The meeting has been moved to Thursdays at 2 PM starting next week.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "CI_004_msg_1"
+        }
+      },
+      {
+        "memory_id": "ab100236-6946-4c67-923e-7864baf3f2f3",
+        "memory_source_id": "CI_004_msg_2",
+        "content": "Yes, the new time works better for the team in the London office.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "CI_004_msg_2"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "Thursday": false,
+      "2 PM": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.71,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.0,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "precision_at_1": 0.0,
+    "precision_at_3": 0.3333,
+    "precision_at_5": 0.3333,
+    "legacy_keyword_recall": 1.0,
+    "legacy_keyword_precision": 0.6667,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 9,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests schedule conflict resolution. The updated meeting time should override the original."
+  },
+  {
+    "question_id": "CI_005",
+    "category": "CONFLICTING_INFORMATION",
+    "difficulty": "medium",
+    "expected_information": [
+      "Spanish"
+    ],
+    "relevant_memory_ids": [
+      "CI_005_msg_2",
+      "CI_005_msg_3"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "19e66f40-fac1-4971-bc2f-beb65a3d591f",
+        "memory_source_id": "CI_005_msg_0",
+        "content": "I'm taking French classes this semester.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "CI_005_msg_0"
+        }
+      },
+      {
+        "memory_id": "390b707a-5ba6-43e4-8f34-6faac64e38ea",
+        "memory_source_id": "CI_005_msg_1",
+        "content": "It was going well, but I had to drop French because of a scheduling conflict with my required statistics course.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "CI_005_msg_1"
+        }
+      },
+      {
+        "memory_id": "f60d9bdb-244a-4d59-b363-cf027e7c3c69",
+        "memory_source_id": "CI_005_msg_2",
+        "content": "Maybe next semester. For now I'm taking Spanish instead since it fits my schedule.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "CI_005_msg_2"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "Spanish": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 1.02,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.5,
+    "recall_at_5": 0.5,
+    "precision_at_1": 0.0,
+    "precision_at_3": 0.3333,
+    "precision_at_5": 0.3333,
+    "legacy_keyword_recall": 1.0,
+    "legacy_keyword_precision": 0.3333,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 8,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests conflict resolution with context: user dropped French and switched to Spanish. Should not say French."
+  },
+  {
+    "question_id": "CI_006",
+    "category": "CONFLICTING_INFORMATION",
+    "difficulty": "medium",
+    "expected_information": [
+      "ThinkPad X1 Carbon"
+    ],
+    "relevant_memory_ids": [
+      "CI_006_msg_3"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "0ebd5dcf-50b1-42bf-90bb-1b064e1df14f",
+        "memory_source_id": "CI_006_msg_0",
+        "content": "I want to get a MacBook Pro for my next laptop.",
+        "similarity": 2.0,
+        "metadata": {
+          "memory_source_id": "CI_006_msg_0"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "ThinkPad X1 Carbon": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.57,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.0,
+    "recall_at_5": 0.0,
+    "precision_at_1": 0.0,
+    "precision_at_3": 0.0,
+    "precision_at_5": 0.0,
+    "legacy_keyword_recall": 0.0,
+    "legacy_keyword_precision": 0.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 10,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests conflict between initial preference (MacBook Pro) and final decision (ThinkPad X1 Carbon) with explicit reasoning."
+  },
+  {
+    "question_id": "II_001",
+    "category": "IRRELEVANT_INFORMATION",
+    "difficulty": "medium",
+    "expected_information": [
+      "metformin",
+      "CVS",
+      "Oak Street"
+    ],
+    "relevant_memory_ids": [
+      "II_001_msg_0"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "a6402b5c-796c-4a0d-8005-28e7f1c275bb",
+        "memory_source_id": "II_001_msg_0",
+        "content": "I need to pick up my prescription for metformin at CVS on Oak Street.",
+        "similarity": 3.0,
+        "metadata": {
+          "memory_source_id": "II_001_msg_0"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "metformin": false,
+      "CVS": false,
+      "Oak Street": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.31,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 1.0,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 1.0,
+    "legacy_keyword_precision": 3.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 13,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests filtering out extensive irrelevant phone discussion to retrieve the key medical/errand information."
+  },
+  {
+    "question_id": "II_002",
+    "category": "IRRELEVANT_INFORMATION",
+    "difficulty": "medium",
+    "expected_information": [
+      "Lincoln Hall",
+      "December 12th",
+      "3 PM"
+    ],
+    "relevant_memory_ids": [
+      "II_002_msg_0"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "1493d79f-8c62-4d10-a209-4906710e9884",
+        "memory_source_id": "II_002_msg_0",
+        "content": "My daughter has a piano recital at Lincoln Hall on December 12th at 3 PM.",
+        "similarity": 3.0,
+        "metadata": {
+          "memory_source_id": "II_002_msg_0"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "Lincoln Hall": false,
+      "December 12th": false,
+      "3 PM": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.5,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 1.0,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 1.0,
+    "legacy_keyword_precision": 3.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 11,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests filtering extensive Roman history discussion to retrieve the personal scheduling information."
+  },
+  {
+    "question_id": "II_003",
+    "category": "IRRELEVANT_INFORMATION",
+    "difficulty": "easy",
+    "expected_information": [
+      "January 31st"
+    ],
+    "relevant_memory_ids": [
+      "II_003_msg_0"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "4289f76b-eb17-48ee-9fb5-68267bfb9e82",
+        "memory_source_id": "II_003_msg_0",
+        "content": "I need to renew my passport. It expires on January 31st and my passport number is AB1234567.",
+        "similarity": 2.0,
+        "metadata": {
+          "memory_source_id": "II_003_msg_0"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "January 31st": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.38,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 1.0,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 1.0,
+    "legacy_keyword_precision": 1.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 12,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests retrieval of simple personal deadline amidst extensive quantum computing discussion."
+  },
+  {
+    "question_id": "II_004",
+    "category": "IRRELEVANT_INFORMATION",
+    "difficulty": "hard",
+    "expected_information": [
+      "lower back pain",
+      "Dr. Walsh",
+      "chiropractor"
+    ],
+    "relevant_memory_ids": [
+      "II_004_msg_0",
+      "II_004_msg_1"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "5692561a-e48f-417c-a434-37b6b83da871",
+        "memory_source_id": "II_004_msg_0",
+        "content": "I've been having lower back pain for about two weeks. I think it's from sitting too much at my standing desk that broke.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "II_004_msg_0"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "lower back pain": false,
+      "Dr. Walsh": false,
+      "chiropractor": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 1.06,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.5,
+    "recall_at_3": 0.5,
+    "recall_at_5": 0.5,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 0.3333,
+    "legacy_keyword_precision": 1.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 12,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests retrieval of health-related information buried within financial discussion."
+  },
+  {
+    "question_id": "II_005",
+    "category": "IRRELEVANT_INFORMATION",
+    "difficulty": "easy",
+    "expected_information": [
+      "2022 Tesla Model 3",
+      "midnight blue"
+    ],
+    "relevant_memory_ids": [
+      "II_005_msg_0"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "8119382a-d6f0-4448-b6d3-bb80889b7065",
+        "memory_source_id": "II_005_msg_0",
+        "content": "My car is a 2022 Tesla Model 3 in midnight blue. The license plate is XYZ 789.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "II_005_msg_0"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "2022 Tesla Model 3": false,
+      "midnight blue": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.47,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 1.0,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 1.0,
+    "legacy_keyword_precision": 2.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 11,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests retrieval of vehicle information surrounded by language learning discussion."
+  },
+  {
+    "question_id": "II_006",
+    "category": "IRRELEVANT_INFORMATION",
+    "difficulty": "hard",
+    "expected_information": [
+      "NovaTech",
+      "AI-powered tools",
+      "small businesses",
+      "Priya Sharma"
+    ],
+    "relevant_memory_ids": [
+      "II_006_msg_0"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "1960b6ea-80c9-4003-8612-35008811291b",
+        "memory_source_id": "II_006_msg_0",
+        "content": "I'm launching a startup called NovaTech. We're building AI-powered tools for small businesses. My co-founder is Priya Sharma.",
+        "similarity": 2.4000000000000004,
+        "metadata": {
+          "memory_source_id": "II_006_msg_0"
+        }
+      },
+      {
+        "memory_id": "34bd55db-8ee3-4505-a486-4fa5fc46ca29",
+        "memory_source_id": "II_006_msg_2",
+        "content": "How is it different from fission?",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "II_006_msg_2"
+        }
+      },
+      {
+        "memory_id": "ce228943-729c-4c79-aedb-3b724af64ebf",
+        "memory_source_id": "II_006_msg_5",
+        "content": "When will fusion energy be commercially available?",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "II_006_msg_5"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "NovaTech": false,
+      "AI-powered tools": false,
+      "small businesses": false,
+      "Priya Sharma": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 1.06,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 1.0,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "precision_at_1": 1.0,
+    "precision_at_3": 0.3333,
+    "precision_at_5": 0.3333,
+    "legacy_keyword_recall": 1.0,
+    "legacy_keyword_precision": 1.3333,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 14,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests retrieval of multiple business details buried under extensive nuclear physics discussion."
+  },
+  {
+    "question_id": "RI_001",
+    "category": "REDUNDANT_INFORMATION",
+    "difficulty": "easy",
+    "expected_information": [
+      "Italian"
+    ],
+    "relevant_memory_ids": [
+      "RI_001_msg_3",
+      "RI_001_msg_0",
+      "RI_001_msg_1",
+      "RI_001_msg_2"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "af560c96-e876-4265-9172-c1db1c803df9",
+        "memory_source_id": "RI_001_msg_1",
+        "content": "Definitely carbonara. By the way, Italian food is my absolute favorite cuisine.",
+        "similarity": 2.0,
+        "metadata": {
+          "memory_source_id": "RI_001_msg_1"
+        }
+      },
+      {
+        "memory_id": "d3dad165-0107-47ee-b544-a6e4835c23e4",
+        "memory_source_id": "RI_001_msg_3",
+        "content": "Yes, twice! The food in Rome was incredible. My favorite type of food is definitely Italian, as I mentioned.",
+        "similarity": 2.0,
+        "metadata": {
+          "memory_source_id": "RI_001_msg_3"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "Italian": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 4.92,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.25,
+    "recall_at_3": 0.5,
+    "recall_at_5": 0.5,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 1.0,
+    "legacy_keyword_precision": 0.5,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 16,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests handling of the same preference stated four times in slightly different ways. Should produce one consolidated fact."
+  },
+  {
+    "question_id": "RI_002",
+    "category": "REDUNDANT_INFORMATION",
+    "difficulty": "easy",
+    "expected_information": [
+      "5:30 AM",
+      "running"
+    ],
+    "relevant_memory_ids": [
+      "RI_002_msg_0"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "99837fff-0a33-481d-9d76-9eff9a5e0853",
+        "memory_source_id": "RI_002_msg_0",
+        "content": "I wake up at 5:30 AM every morning to go running.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "RI_002_msg_0"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "5:30 AM": false,
+      "running": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.68,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 1.0,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 1.0,
+    "legacy_keyword_precision": 2.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 12,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests handling of repeated wake-up time and running habit stated identically four times."
+  },
+  {
+    "question_id": "RI_003",
+    "category": "REDUNDANT_INFORMATION",
+    "difficulty": "medium",
+    "expected_information": [
+      "machine learning",
+      "customer churn prediction",
+      "XGBoost"
+    ],
+    "relevant_memory_ids": [
+      "RI_003_msg_1",
+      "RI_003_msg_2",
+      "RI_003_msg_0"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "a5f361a3-bad4-4e07-8a0e-63d7a1e4f307",
+        "memory_source_id": "RI_003_msg_1",
+        "content": "XGBoost. Our ML project focuses on predicting which customers will stop using our service.",
+        "similarity": 2.0,
+        "metadata": {
+          "memory_source_id": "RI_003_msg_1"
+        }
+      },
+      {
+        "memory_id": "3472a29f-20c4-45cc-a765-f57cab87b6b1",
+        "memory_source_id": "RI_003_msg_0",
+        "content": "I'm working on a machine learning project to predict customer churn.",
+        "similarity": 2.0,
+        "metadata": {
+          "memory_source_id": "RI_003_msg_0"
+        }
+      },
+      {
+        "memory_id": "be9811dd-454e-4442-8a9f-0dfae4c4c8e9",
+        "memory_source_id": "RI_003_msg_2",
+        "content": "Usage frequency, last login, support tickets, and payment history. The whole project is about anticipating customer churn using machine learning.",
+        "similarity": 2.0,
+        "metadata": {
+          "memory_source_id": "RI_003_msg_2"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "machine learning": false,
+      "customer churn prediction": false,
+      "XGBoost": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.84,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.3333,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 0.6667,
+    "legacy_keyword_precision": 0.6667,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 11,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests handling of project description stated in semantically similar but different ways (churn, stop using service, customer attrition)."
+  },
+  {
+    "question_id": "RI_004",
+    "category": "REDUNDANT_INFORMATION",
+    "difficulty": "easy",
+    "expected_information": [
+      "October 10th"
+    ],
+    "relevant_memory_ids": [
+      "RI_004_msg_0",
+      "RI_004_msg_2"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "e6fe59a3-9b62-499d-9c2c-db84396bd198",
+        "memory_source_id": "RI_004_msg_1",
+        "content": "Seven years. Our wedding anniversary falls on the 10th of October.",
+        "similarity": 2.0,
+        "metadata": {
+          "memory_source_id": "RI_004_msg_1"
+        }
+      },
+      {
+        "memory_id": "684a5df9-521f-4df1-9fe1-6dba9df8c46b",
+        "memory_source_id": "RI_004_msg_3",
+        "content": "Those are good ideas. I want to make our Oct 10 anniversary special this year.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "RI_004_msg_3"
+        }
+      },
+      {
+        "memory_id": "09bcbc8e-9dfd-4614-94ae-1b7109331405",
+        "memory_source_id": "RI_004_msg_0",
+        "content": "My wife and I celebrate our anniversary on October 10th.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "RI_004_msg_0"
+        }
+      },
+      {
+        "memory_id": "85453858-2ab1-4509-b309-53979ee30e2d",
+        "memory_source_id": "RI_004_msg_2",
+        "content": "Do you have gift ideas? Our anniversary date is October 10th and it's coming up.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "RI_004_msg_2"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "October 10th": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.78,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.5,
+    "recall_at_5": 1.0,
+    "precision_at_1": 0.0,
+    "precision_at_3": 0.3333,
+    "precision_at_5": 0.5,
+    "legacy_keyword_recall": 1.0,
+    "legacy_keyword_precision": 0.25,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 8,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests consolidation of a date mentioned four times in varying formats."
+  },
+  {
+    "question_id": "RI_005",
+    "category": "REDUNDANT_INFORMATION",
+    "difficulty": "medium",
+    "expected_information": [
+      "chronic migraines",
+      "stress",
+      "bright lights",
+      "sumatriptan"
+    ],
+    "relevant_memory_ids": [
+      "RI_005_msg_2",
+      "RI_005_msg_0",
+      "RI_005_msg_1"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "9eaa828f-a54d-4725-81e6-d91ef29cab80",
+        "memory_source_id": "RI_005_msg_0",
+        "content": "I suffer from chronic migraines. They usually happen 2-3 times a month.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "RI_005_msg_0"
+        }
+      },
+      {
+        "memory_id": "6e259ecc-3701-4f8e-a9b1-16842adaa9fe",
+        "memory_source_id": "RI_005_msg_2",
+        "content": "It helps when I catch them early. The recurring headaches, the migraines I mean, are triggered by stress and bright lights.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "RI_005_msg_2"
+        }
+      },
+      {
+        "memory_id": "afefc6ac-3782-486b-8741-6a3453ba5723",
+        "memory_source_id": "RI_005_msg_3",
+        "content": "I use blue-light-blocking glasses. These persistent migraines that I deal with monthly are really affecting my productivity.",
+        "similarity": 0.2,
+        "metadata": {
+          "memory_source_id": "RI_005_msg_3"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "chronic migraines": false,
+      "stress": false,
+      "bright lights": false,
+      "sumatriptan": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.73,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.3333,
+    "recall_at_3": 0.6667,
+    "recall_at_5": 0.6667,
+    "precision_at_1": 1.0,
+    "precision_at_3": 0.6667,
+    "precision_at_5": 0.6667,
+    "legacy_keyword_recall": 0.75,
+    "legacy_keyword_precision": 1.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 12,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests consolidation of health information stated redundantly across multiple turns with slight phrasing variations."
+  },
+  {
+    "question_id": "RI_006",
+    "category": "REDUNDANT_INFORMATION",
+    "difficulty": "easy",
+    "expected_information": [
+      "guitar",
+      "one hour",
+      "every evening"
+    ],
+    "relevant_memory_ids": [
+      "RI_006_msg_1",
+      "RI_006_msg_2",
+      "RI_006_msg_0",
+      "RI_006_msg_3"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "c4940ec2-26a8-43f4-9a75-4b2c9e77cbf9",
+        "memory_source_id": "RI_006_msg_0",
+        "content": "I'm learning to play the guitar. I practice for an hour each evening.",
+        "similarity": 1.2,
+        "metadata": {
+          "memory_source_id": "RI_006_msg_0"
+        }
+      },
+      {
+        "memory_id": "3efdcddc-4d54-466d-9365-41a9a79dbac2",
+        "memory_source_id": "RI_006_msg_1",
+        "content": "About six months. I do my guitar practice every night for about sixty minutes.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "RI_006_msg_1"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "guitar": false,
+      "one hour": false,
+      "every evening": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.93,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.25,
+    "recall_at_3": 0.5,
+    "recall_at_5": 0.5,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 0.3333,
+    "legacy_keyword_precision": 0.5,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 11,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests consolidation of practice habit stated four times in slightly different wordings."
+  },
+  {
+    "question_id": "MHR_001",
+    "category": "MULTI_HOP_RELATIONSHIP",
+    "difficulty": "medium",
+    "expected_information": [
+      "Raj Patel",
+      "Apache Kafka",
+      "AWS"
+    ],
+    "relevant_memory_ids": [
+      "MHR_001_msg_3",
+      "MHR_001_msg_2",
+      "MHR_001_msg_1"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "69eec16b-f36f-48ed-b026-0443cb2b56c2",
+        "memory_source_id": "MHR_001_msg_1",
+        "content": "Apollo is a data pipeline system. It uses Apache Kafka for message streaming.",
+        "similarity": 2.0,
+        "metadata": {
+          "memory_source_id": "MHR_001_msg_1"
+        }
+      },
+      {
+        "memory_id": "90e491c9-c290-41ba-b8f2-0531cd2c023c",
+        "memory_source_id": "MHR_001_msg_3",
+        "content": "He does, but he's excellent at it. The cluster runs on AWS.",
+        "similarity": 1.2,
+        "metadata": {
+          "memory_source_id": "MHR_001_msg_3"
+        }
+      },
+      {
+        "memory_id": "b0b0c591-e8a8-45d0-ac5e-af88848b9609",
+        "memory_source_id": "MHR_001_msg_0",
+        "content": "I'm working on a project called Apollo.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "MHR_001_msg_0"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "Raj Patel": false,
+      "Apache Kafka": false,
+      "AWS": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.68,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.3333,
+    "recall_at_3": 0.6667,
+    "recall_at_5": 0.6667,
+    "precision_at_1": 1.0,
+    "precision_at_3": 0.6667,
+    "precision_at_5": 0.6667,
+    "legacy_keyword_recall": 0.6667,
+    "legacy_keyword_precision": 0.6667,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 11,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Requires connecting: Project Apollo -> uses Kafka -> managed by Raj Patel -> runs on AWS."
+  },
+  {
+    "question_id": "MHR_002",
+    "category": "MULTI_HOP_RELATIONSHIP",
+    "difficulty": "medium",
+    "expected_information": [
+      "Scratch",
+      "Ms. Rodriguez",
+      "coding club"
+    ],
+    "relevant_memory_ids": [
+      "MHR_002_msg_2",
+      "MHR_002_msg_3",
+      "MHR_002_msg_1"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "3f47fa05-1dbc-4fa8-9861-0695d9b7da8e",
+        "memory_source_id": "MHR_002_msg_1",
+        "content": "She loves it! Her teacher is Ms. Rodriguez.",
+        "similarity": 1.2,
+        "metadata": {
+          "memory_source_id": "MHR_002_msg_1"
+        }
+      },
+      {
+        "memory_id": "8e2aeb9b-d9b5-4ab1-94e2-dbb07345d5ce",
+        "memory_source_id": "MHR_002_msg_0",
+        "content": "My daughter Emma goes to Oakwood Elementary School.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "MHR_002_msg_0"
+        }
+      },
+      {
+        "memory_id": "bd7bc8eb-b376-4da2-a415-322f4a8e9b17",
+        "memory_source_id": "MHR_002_msg_2",
+        "content": "Ms. Rodriguez runs the school's coding club. Emma joined it last month.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "MHR_002_msg_2"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "Scratch": false,
+      "Ms. Rodriguez": false,
+      "coding club": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.59,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.3333,
+    "recall_at_3": 0.6667,
+    "recall_at_5": 0.6667,
+    "precision_at_1": 1.0,
+    "precision_at_3": 0.6667,
+    "precision_at_5": 0.6667,
+    "legacy_keyword_recall": 0.6667,
+    "legacy_keyword_precision": 0.6667,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 8,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Requires connecting: Emma -> coding club -> led by Ms. Rodriguez -> uses Scratch."
+  },
+  {
+    "question_id": "MHR_003",
+    "category": "MULTI_HOP_RELATIONSHIP",
+    "difficulty": "hard",
+    "expected_information": [
+      "Alzheimer's",
+      "AlphaFold",
+      "BioGenesis"
+    ],
+    "relevant_memory_ids": [
+      "MHR_003_msg_3",
+      "MHR_003_msg_1",
+      "MHR_003_msg_0",
+      "MHR_003_msg_4"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "11a157fd-03bc-4442-a4b8-1d98a3dac976",
+        "memory_source_id": "MHR_003_msg_0",
+        "content": "My company HealthBridge partners with a research lab called BioGenesis.",
+        "similarity": 4.0,
+        "metadata": {
+          "memory_source_id": "MHR_003_msg_0"
+        }
+      },
+      {
+        "memory_id": "1b9a3906-110d-4e77-aeaa-233fd49945d5",
+        "memory_source_id": "MHR_003_msg_4",
+        "content": "Their goal is to discover new drug targets for Alzheimer's disease.",
+        "similarity": 3.0,
+        "metadata": {
+          "memory_source_id": "MHR_003_msg_4"
+        }
+      },
+      {
+        "memory_id": "3ec26cc8-3b5a-4a09-b788-5f8f0c5edd67",
+        "memory_source_id": "MHR_003_msg_3",
+        "content": "Dr. Tanaka uses AlphaFold as the base model and extends it with proprietary algorithms.",
+        "similarity": 2.0,
+        "metadata": {
+          "memory_source_id": "MHR_003_msg_3"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "Alzheimer's": false,
+      "AlphaFold": false,
+      "BioGenesis": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.62,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.25,
+    "recall_at_3": 0.75,
+    "recall_at_5": 0.75,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 1.0,
+    "legacy_keyword_precision": 1.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 8,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Requires connecting: HealthBridge -> partners with BioGenesis -> Dr. Tanaka uses AlphaFold -> targets Alzheimer's drug discovery."
+  },
+  {
+    "question_id": "MHR_004",
+    "category": "MULTI_HOP_RELATIONSHIP",
+    "difficulty": "hard",
+    "expected_information": [
+      "Greenfield Properties",
+      "Tom Wilson",
+      "QuickFix Services",
+      "Mike"
+    ],
+    "relevant_memory_ids": [
+      "MHR_004_msg_1",
+      "MHR_004_msg_2",
+      "MHR_004_msg_3",
+      "MHR_004_msg_0"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "a8e51388-1ffc-4625-b165-71c303f04945",
+        "memory_source_id": "MHR_004_msg_3",
+        "content": "Hit or miss. Their lead plumber Mike fixed my sink last week though, and he was great.",
+        "similarity": 1.2,
+        "metadata": {
+          "memory_source_id": "MHR_004_msg_3"
+        }
+      },
+      {
+        "memory_id": "10ab461a-94c9-4393-a661-c6f60581e476",
+        "memory_source_id": "MHR_004_msg_0",
+        "content": "I rent my apartment from a company called Greenfield Properties.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "MHR_004_msg_0"
+        }
+      },
+      {
+        "memory_id": "e1d823ad-9e1a-4bf5-9422-0dba6953a68d",
+        "memory_source_id": "MHR_004_msg_2",
+        "content": "Usually. Tom contracts maintenance to a company called QuickFix Services.",
+        "similarity": 0.2,
+        "metadata": {
+          "memory_source_id": "MHR_004_msg_2"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "Greenfield Properties": false,
+      "Tom Wilson": false,
+      "QuickFix Services": false,
+      "Mike": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.51,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.25,
+    "recall_at_3": 0.75,
+    "recall_at_5": 0.75,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 0.75,
+    "legacy_keyword_precision": 1.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 10,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Requires 4-hop chain: Apartment -> Greenfield Properties -> Tom Wilson -> QuickFix Services -> Mike the plumber."
+  },
+  {
+    "question_id": "MHR_005",
+    "category": "MULTI_HOP_RELATIONSHIP",
+    "difficulty": "medium",
+    "expected_information": [
+      "TensorFlow",
+      "DataViz Corp",
+      "Deep Learning Specialization"
+    ],
+    "relevant_memory_ids": [
+      "MHR_005_msg_0",
+      "MHR_005_msg_3",
+      "MHR_005_msg_1"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "52c11420-3fbe-43b4-8d02-dc44913c8c7b",
+        "memory_source_id": "MHR_005_msg_0",
+        "content": "I'm taking an online course on Coursera called 'Deep Learning Specialization'.",
+        "similarity": 3.0,
+        "metadata": {
+          "memory_source_id": "MHR_005_msg_0"
+        }
+      },
+      {
+        "memory_id": "36c7a873-9b25-4fa1-b3b2-9a45ab78be4c",
+        "memory_source_id": "MHR_005_msg_2",
+        "content": "I'm on Course 3, which covers structuring machine learning projects.",
+        "similarity": 1.2,
+        "metadata": {
+          "memory_source_id": "MHR_005_msg_2"
+        }
+      },
+      {
+        "memory_id": "ba64c1a4-9450-4427-b213-b31b926a9de3",
+        "memory_source_id": "MHR_005_msg_3",
+        "content": "I'm applying what I learn to my work project at DataViz Corp.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "MHR_005_msg_3"
+        }
+      },
+      {
+        "memory_id": "4282cf3e-f5eb-46c4-a605-d843a6608a80",
+        "memory_source_id": "MHR_005_msg_1",
+        "content": "Yes! Professor Ng's teaching style is amazing. The course uses Python and TensorFlow.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "MHR_005_msg_1"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "TensorFlow": false,
+      "DataViz Corp": false,
+      "Deep Learning Specialization": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.47,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.3333,
+    "recall_at_3": 0.6667,
+    "recall_at_5": 1.0,
+    "precision_at_1": 1.0,
+    "precision_at_3": 0.6667,
+    "precision_at_5": 0.75,
+    "legacy_keyword_recall": 1.0,
+    "legacy_keyword_precision": 0.75,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 9,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Requires connecting: Coursera course -> teaches TensorFlow -> applying at DataViz Corp."
+  },
+  {
+    "question_id": "MHR_006",
+    "category": "MULTI_HOP_RELATIONSHIP",
+    "difficulty": "hard",
+    "expected_information": [
+      "Sunrise Farms",
+      "Henderson family",
+      "heirloom tomatoes"
+    ],
+    "relevant_memory_ids": [
+      "MHR_006_msg_1",
+      "MHR_006_msg_3",
+      "MHR_006_msg_2"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "b7820b86-322c-4e94-b90b-e598ba1fa287",
+        "memory_source_id": "MHR_006_msg_3",
+        "content": "The Hendersons grow heirloom tomatoes that Sarah uses in her signature dish, the Tomato Bisque.",
+        "similarity": 3.0,
+        "metadata": {
+          "memory_source_id": "MHR_006_msg_3"
+        }
+      },
+      {
+        "memory_id": "7c5c1c8a-d076-4aa8-b04d-da43f82d3db9",
+        "memory_source_id": "MHR_006_msg_0",
+        "content": "My neighbor Sarah is a chef at La Maison restaurant.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "MHR_006_msg_0"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "Sunrise Farms": false,
+      "Henderson family": false,
+      "heirloom tomatoes": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.57,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.3333,
+    "recall_at_3": 0.3333,
+    "recall_at_5": 0.3333,
+    "precision_at_1": 1.0,
+    "precision_at_3": 0.5,
+    "precision_at_5": 0.5,
+    "legacy_keyword_recall": 0.3333,
+    "legacy_keyword_precision": 0.5,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 7,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Requires connecting: Sarah -> La Maison -> Tomato Bisque -> heirloom tomatoes -> Sunrise Farms -> Henderson family."
+  },
+  {
+    "question_id": "PER_001",
+    "category": "PERSONALIZATION",
+    "difficulty": "medium",
+    "expected_information": [
+      "concise",
+      "visual learner",
+      "diagrams",
+      "examples",
+      "metric units"
+    ],
+    "relevant_memory_ids": [
+      "PER_001_msg_2",
+      "PER_001_msg_1",
+      "PER_001_msg_3"
+    ],
+    "retrieved_memories": [],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "concise": false,
+      "visual learner": false,
+      "diagrams": false,
+      "examples": false,
+      "metric units": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.32,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.0,
+    "recall_at_5": 0.0,
+    "precision_at_1": 0.0,
+    "precision_at_3": 0.0,
+    "precision_at_5": 0.0,
+    "legacy_keyword_recall": null,
+    "legacy_keyword_precision": null,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 9,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests personalization of response style based on explicitly stated user preferences."
+  },
+  {
+    "question_id": "PER_002",
+    "category": "PERSONALIZATION",
+    "difficulty": "medium",
+    "expected_information": [
+      "beginner",
+      "simple language",
+      "no jargon",
+      "analogies",
+      "step-by-step"
+    ],
+    "relevant_memory_ids": [
+      "PER_002_msg_0",
+      "PER_002_msg_3",
+      "PER_002_msg_2"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "6e16e0f5-3875-4f79-8e41-bcb95b322fe1",
+        "memory_source_id": "PER_002_msg_0",
+        "content": "I'm a beginner at programming. I started learning Python two months ago.",
+        "similarity": 2.0,
+        "metadata": {
+          "memory_source_id": "PER_002_msg_0"
+        }
+      },
+      {
+        "memory_id": "fe093c60-f9c3-4c23-a17c-4f4dfa53d559",
+        "memory_source_id": "PER_002_msg_2",
+        "content": "I learn best with analogies. Like when someone explained variables as labeled boxes, that clicked for me.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "PER_002_msg_2"
+        }
+      },
+      {
+        "memory_id": "c2287e25-124e-4b50-bbba-d9d7cf6c1280",
+        "memory_source_id": "PER_002_msg_3",
+        "content": "Also, I prefer step-by-step instructions rather than being given the full solution at once.",
+        "similarity": 0.2,
+        "metadata": {
+          "memory_source_id": "PER_002_msg_3"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "beginner": false,
+      "simple language": false,
+      "no jargon": false,
+      "analogies": false,
+      "step-by-step": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.57,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.3333,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 0.6,
+    "legacy_keyword_precision": 1.0,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 11,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests personalization of technical explanation style for a programming beginner."
+  },
+  {
+    "question_id": "PER_003",
+    "category": "PERSONALIZATION",
+    "difficulty": "hard",
+    "expected_information": [
+      "vegetarian",
+      "spicy",
+      "no nuts",
+      "nut allergy",
+      "under 30 minutes"
+    ],
+    "relevant_memory_ids": [
+      "PER_003_msg_0",
+      "PER_003_msg_4"
+    ],
+    "retrieved_memories": [],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "vegetarian": false,
+      "spicy": false,
+      "no nuts": false,
+      "nut allergy": false,
+      "under 30 minutes": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.25,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.0,
+    "recall_at_5": 0.0,
+    "precision_at_1": 0.0,
+    "precision_at_3": 0.0,
+    "precision_at_5": 0.0,
+    "legacy_keyword_recall": null,
+    "legacy_keyword_precision": null,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 8,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests multi-constraint personalization for food recommendations combining dietary restrictions, preferences, and time constraints."
+  },
+  {
+    "question_id": "PER_004",
+    "category": "PERSONALIZATION",
+    "difficulty": "medium",
+    "expected_information": [
+      "night owl",
+      "10 PM to 2 AM",
+      "nothing before noon",
+      "email over phone calls",
+      "detailed agenda"
+    ],
+    "relevant_memory_ids": [
+      "PER_004_msg_0",
+      "PER_004_msg_3",
+      "PER_004_msg_2"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "29244426-e3da-49b3-8871-8a11088acfdf",
+        "memory_source_id": "PER_004_msg_1",
+        "content": "I usually sleep from 3 AM to 10 AM. Don't schedule anything before noon for me.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "PER_004_msg_1"
+        }
+      },
+      {
+        "memory_id": "e266cdbd-1d2b-4b8f-beaf-320fde21c089",
+        "memory_source_id": "PER_004_msg_0",
+        "content": "I'm a night owl. I do my best work between 10 PM and 2 AM.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "PER_004_msg_0"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "night owl": false,
+      "10 PM to 2 AM": false,
+      "nothing before noon": false,
+      "email over phone calls": false,
+      "detailed agenda": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.83,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.3333,
+    "recall_at_5": 0.3333,
+    "precision_at_1": 0.0,
+    "precision_at_3": 0.5,
+    "precision_at_5": 0.5,
+    "legacy_keyword_recall": 0.2,
+    "legacy_keyword_precision": 0.5,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 9,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests personalization of scheduling and communication preferences for work context."
+  },
+  {
+    "question_id": "PER_005",
+    "category": "PERSONALIZATION",
+    "difficulty": "hard",
+    "expected_information": [
+      "family-friendly",
+      "young kids",
+      "small apartment",
+      "budget-conscious",
+      "wheat allergy",
+      "no car",
+      "public transit"
+    ],
+    "relevant_memory_ids": [
+      "PER_005_msg_0",
+      "PER_005_msg_3",
+      "PER_005_msg_4",
+      "PER_005_msg_1"
+    ],
+    "retrieved_memories": [
+      {
+        "memory_id": "33ae0955-f4f0-4f97-9a09-9c12a54fd1d1",
+        "memory_source_id": "PER_005_msg_0",
+        "content": "I have two young kids, ages 3 and 6, so family-friendly suggestions are important.",
+        "similarity": 1.2,
+        "metadata": {
+          "memory_source_id": "PER_005_msg_0"
+        }
+      },
+      {
+        "memory_id": "42b6bf3f-29dc-443b-82f5-183dfa8d989a",
+        "memory_source_id": "PER_005_msg_1",
+        "content": "We live in a small apartment, so space-saving ideas are appreciated.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "PER_005_msg_1"
+        }
+      },
+      {
+        "memory_id": "158da911-f860-4a41-a1e0-03bfbe437d47",
+        "memory_source_id": "PER_005_msg_3",
+        "content": "Also, my 3-year-old has a wheat allergy.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "PER_005_msg_3"
+        }
+      },
+      {
+        "memory_id": "e58d2f3f-380a-412d-a067-ab278149e966",
+        "memory_source_id": "PER_005_msg_4",
+        "content": "We don't have a car, so anything needs to be accessible by public transit or walking.",
+        "similarity": 1.0,
+        "metadata": {
+          "memory_source_id": "PER_005_msg_4"
+        }
+      }
+    ],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "family-friendly": false,
+      "young kids": false,
+      "small apartment": false,
+      "budget-conscious": false,
+      "wheat allergy": false,
+      "no car": false,
+      "public transit": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.74,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.25,
+    "recall_at_3": 0.75,
+    "recall_at_5": 1.0,
+    "precision_at_1": 1.0,
+    "precision_at_3": 1.0,
+    "precision_at_5": 1.0,
+    "legacy_keyword_recall": 0.7143,
+    "legacy_keyword_precision": 1.25,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 11,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests complex multi-constraint personalization for a family with many lifestyle and budget constraints."
+  },
+  {
+    "question_id": "PER_006",
+    "category": "PERSONALIZATION",
+    "difficulty": "medium",
+    "expected_information": [
+      "pros and cons lists",
+      "flag risks upfront",
+      "clear deadlines",
+      "structured"
+    ],
+    "relevant_memory_ids": [
+      "PER_006_msg_1"
+    ],
+    "retrieved_memories": [],
+    "generated_answer": "I don't have that information.",
+    "exact_match": false,
+    "keyword_matches": {
+      "pros and cons lists": false,
+      "flag risks upfront": false,
+      "clear deadlines": false,
+      "structured": false
+    },
+    "keyword_match_ratio": 0.0,
+    "semantic_similarity": null,
+    "llm_judge_score": null,
+    "llm_judge_reasoning": null,
+    "correctness": 0.0,
+    "latency_ms": 0.34,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "recall_at_1": 0.0,
+    "recall_at_3": 0.0,
+    "recall_at_5": 0.0,
+    "precision_at_1": 0.0,
+    "precision_at_3": 0.0,
+    "precision_at_5": 0.0,
+    "legacy_keyword_recall": null,
+    "legacy_keyword_precision": null,
+    "long_term_consistency": null,
+    "personalization_score": null,
+    "redundancy_score": null,
+    "conflict_count": null,
+    "outdated_memory_count": null,
+    "memory_growth": null,
+    "context_tokens": null,
+    "memory_size": 8,
+    "retrieval_latency_ms": null,
+    "cost": null,
+    "memory_type": "GraphMemory",
+    "embedding_model": null,
+    "notes": "Tests personalization of information presentation style for a user with specific communication needs."
+  }
+]

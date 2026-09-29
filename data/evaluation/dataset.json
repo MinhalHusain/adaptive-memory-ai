@@ -1,0 +1,3065 @@
+[
+    {
+        "case_id": "FR_001",
+        "category": "FACT_RETENTION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "Hi there! My name is Alex.",
+                "memory_source_id": "FR_001_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Hello Alex! Nice to meet you. How can I help you today?"
+            },
+            {
+                "role": "user",
+                "content": "I'm studying computer science at MIT.",
+                "memory_source_id": "FR_001_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "That's wonderful! Computer science at MIT is a fantastic program. What area interests you most?"
+            },
+            {
+                "role": "user",
+                "content": "I'm really into machine learning and natural language processing.",
+                "memory_source_id": "FR_001_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "Great choices! Both fields are rapidly evolving. Are you working on any projects?"
+            }
+        ],
+        "query": "What is my field of study and where am I studying?",
+        "expected_information": [
+            "computer science",
+            "MIT"
+        ],
+        "relevant_memory_ids": [
+            "FR_001_msg_1"
+        ],
+        "difficulty": "easy",
+        "notes": "Tests basic retention of user's educational background stated in a single session."
+    },
+    {
+        "case_id": "FR_002",
+        "category": "FACT_RETENTION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I just adopted a golden retriever puppy named Biscuit.",
+                "memory_source_id": "FR_002_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Congratulations! Golden retrievers are wonderful dogs. How old is Biscuit?"
+            },
+            {
+                "role": "user",
+                "content": "She's about 10 weeks old. We also have a cat named Whiskers who is 3 years old.",
+                "memory_source_id": "FR_002_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "That's a lovely little family! How are Biscuit and Whiskers getting along?"
+            },
+            {
+                "role": "user",
+                "content": "Surprisingly well! Whiskers seems curious about her.",
+                "memory_source_id": "FR_002_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "That's great to hear! It's always nice when pets get along."
+            }
+        ],
+        "query": "What pets do I have and what are their names?",
+        "expected_information": [
+            "golden retriever",
+            "Biscuit",
+            "cat",
+            "Whiskers"
+        ],
+        "relevant_memory_ids": [
+            "FR_002_msg_2",
+            "FR_002_msg_0",
+            "FR_002_msg_1"
+        ],
+        "difficulty": "easy",
+        "notes": "Tests retention of multiple related facts (two pets with names and types)."
+    },
+    {
+        "case_id": "FR_003",
+        "category": "FACT_RETENTION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I'm planning my wedding for June 15th next year.",
+                "memory_source_id": "FR_003_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "How exciting! Congratulations! Have you started planning the details?"
+            },
+            {
+                "role": "user",
+                "content": "Yes, the venue is the Lakeside Gardens in Portland.",
+                "memory_source_id": "FR_003_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "That sounds beautiful! How many guests are you expecting?"
+            },
+            {
+                "role": "user",
+                "content": "Around 120 guests. My fianc\u00e9's name is Jordan.",
+                "memory_source_id": "FR_003_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "Wonderful! That's a great size for a wedding. Is there anything specific you need help with?"
+            },
+            {
+                "role": "user",
+                "content": "We're looking for a jazz band for the reception.",
+                "memory_source_id": "FR_003_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "A jazz band would be a lovely touch for a wedding reception!"
+            }
+        ],
+        "query": "What are the details of my upcoming wedding?",
+        "expected_information": [
+            "June 15th",
+            "Lakeside Gardens",
+            "Portland",
+            "Jordan",
+            "120"
+        ],
+        "relevant_memory_ids": [
+            "FR_003_msg_0",
+            "FR_003_msg_2",
+            "FR_003_msg_1"
+        ],
+        "difficulty": "medium",
+        "notes": "Tests retention of multiple specific details from a single conversation topic."
+    },
+    {
+        "case_id": "FR_004",
+        "category": "FACT_RETENTION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I work as a senior software engineer at Stripe.",
+                "memory_source_id": "FR_004_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "That's impressive! Stripe is a great company. What team are you on?"
+            },
+            {
+                "role": "user",
+                "content": "I'm on the payments infrastructure team. I've been there for about 3 years.",
+                "memory_source_id": "FR_004_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Payments infrastructure is critical work! Do you enjoy it?"
+            },
+            {
+                "role": "user",
+                "content": "I do, but I'm thinking about transitioning into engineering management.",
+                "memory_source_id": "FR_004_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "That's a common career path. What draws you to management?"
+            },
+            {
+                "role": "user",
+                "content": "I enjoy mentoring junior engineers and I think I could have more impact.",
+                "memory_source_id": "FR_004_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "Those are great reasons. Have you talked to your manager about this?"
+            }
+        ],
+        "query": "Where do I work and what is my role?",
+        "expected_information": [
+            "senior software engineer",
+            "Stripe",
+            "payments infrastructure"
+        ],
+        "relevant_memory_ids": [
+            "FR_004_msg_1",
+            "FR_004_msg_0"
+        ],
+        "difficulty": "easy",
+        "notes": "Tests retention of professional information."
+    },
+    {
+        "case_id": "FR_005",
+        "category": "FACT_RETENTION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I have a severe peanut allergy and I'm lactose intolerant.",
+                "memory_source_id": "FR_005_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "I'll keep that in mind. Those are important dietary restrictions. Do you have any other allergies?"
+            },
+            {
+                "role": "user",
+                "content": "No, those are the main ones. I'm also vegetarian by choice.",
+                "memory_source_id": "FR_005_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Got it. Vegetarian with peanut allergy and lactose intolerance. That must make dining out challenging sometimes."
+            },
+            {
+                "role": "user",
+                "content": "It can be, but I've found some great restaurants that accommodate everything.",
+                "memory_source_id": "FR_005_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "That's great to hear!"
+            }
+        ],
+        "query": "What are my dietary restrictions and food allergies?",
+        "expected_information": [
+            "peanut allergy",
+            "lactose intolerant",
+            "vegetarian"
+        ],
+        "relevant_memory_ids": [
+            "FR_005_msg_0",
+            "FR_005_msg_1"
+        ],
+        "difficulty": "medium",
+        "notes": "Tests retention of health-critical information (allergies and dietary preferences)."
+    },
+    {
+        "case_id": "FR_006",
+        "category": "FACT_RETENTION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I'm training for the Boston Marathon next April.",
+                "memory_source_id": "FR_006_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "That's ambitious! How's your training going?"
+            },
+            {
+                "role": "user",
+                "content": "Pretty well. I run about 40 miles a week right now. My best marathon time is 3 hours 25 minutes.",
+                "memory_source_id": "FR_006_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "That's a solid base and a great time! What's your goal for Boston?"
+            },
+            {
+                "role": "user",
+                "content": "I'm hoping to break 3 hours 15 minutes. My coach Sarah thinks it's achievable.",
+                "memory_source_id": "FR_006_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "With a coach guiding you and that training volume, it sounds very doable!"
+            },
+            {
+                "role": "user",
+                "content": "I also do cross-training with swimming twice a week at the YMCA.",
+                "memory_source_id": "FR_006_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "Swimming is excellent cross-training for runners. Great approach!"
+            }
+        ],
+        "query": "What marathon am I training for and what is my time goal?",
+        "expected_information": [
+            "Boston Marathon",
+            "3 hours 15 minutes"
+        ],
+        "relevant_memory_ids": [
+            "FR_006_msg_0",
+            "FR_006_msg_2"
+        ],
+        "difficulty": "medium",
+        "notes": "Tests retention of athletic goals and training details."
+    },
+    {
+        "case_id": "FR_007",
+        "category": "FACT_RETENTION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "My daughter Emma just turned 7 and my son Liam is 4.",
+                "memory_source_id": "FR_007_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "What wonderful ages! Are they in school?"
+            },
+            {
+                "role": "user",
+                "content": "Emma is in second grade at Oakwood Elementary. Liam is in preschool.",
+                "memory_source_id": "FR_007_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Lovely! How are they doing?"
+            },
+            {
+                "role": "user",
+                "content": "Emma loves reading and wants to be a veterinarian. Liam is obsessed with dinosaurs.",
+                "memory_source_id": "FR_007_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "Those are adorable interests! It's great when kids have passions."
+            },
+            {
+                "role": "user",
+                "content": "My wife Nina is a pediatrician, so Emma probably gets the animal love from her.",
+                "memory_source_id": "FR_007_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "That makes sense! A family that cares about living things."
+            }
+        ],
+        "query": "Tell me about my family members and their ages.",
+        "expected_information": [
+            "Emma",
+            "7",
+            "Liam",
+            "4",
+            "Nina",
+            "pediatrician"
+        ],
+        "relevant_memory_ids": [
+            "FR_007_msg_1",
+            "FR_007_msg_3",
+            "FR_007_msg_0",
+            "FR_007_msg_2"
+        ],
+        "difficulty": "hard",
+        "notes": "Tests retention of complex family structure with multiple members, ages, and occupations."
+    },
+    {
+        "case_id": "LRR_001",
+        "category": "LONG_RANGE_RETRIEVAL",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I just bought a house on Maple Street in Boulder, Colorado.",
+                "memory_source_id": "LRR_001_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Congratulations on the new home! Boulder is a beautiful area."
+            },
+            {
+                "role": "user",
+                "content": "Thanks! Can you help me understand photosynthesis for a quiz?",
+                "memory_source_id": "LRR_001_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Of course! Photosynthesis is the process by which plants convert sunlight into energy."
+            },
+            {
+                "role": "user",
+                "content": "What about the light-dependent reactions?",
+                "memory_source_id": "LRR_001_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "The light-dependent reactions occur in the thylakoid membranes and require sunlight to produce ATP and NADPH."
+            },
+            {
+                "role": "user",
+                "content": "And the Calvin cycle?",
+                "memory_source_id": "LRR_001_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "The Calvin cycle occurs in the stroma and uses ATP and NADPH to fix carbon dioxide into glucose."
+            },
+            {
+                "role": "user",
+                "content": "What is the chemical equation for photosynthesis?",
+                "memory_source_id": "LRR_001_msg_4"
+            },
+            {
+                "role": "assistant",
+                "content": "The overall equation is: 6CO2 + 6H2O + light energy \u2192 C6H12O6 + 6O2."
+            },
+            {
+                "role": "user",
+                "content": "Can you explain cellular respiration too?",
+                "memory_source_id": "LRR_001_msg_5"
+            },
+            {
+                "role": "assistant",
+                "content": "Cellular respiration is essentially the reverse: glucose is broken down to release energy, producing CO2 and water."
+            },
+            {
+                "role": "user",
+                "content": "How do mitochondria factor in?",
+                "memory_source_id": "LRR_001_msg_6"
+            },
+            {
+                "role": "assistant",
+                "content": "Mitochondria are where most of the ATP is generated through oxidative phosphorylation."
+            },
+            {
+                "role": "user",
+                "content": "Great, that helps a lot with my biology quiz.",
+                "memory_source_id": "LRR_001_msg_7"
+            },
+            {
+                "role": "assistant",
+                "content": "Good luck on your quiz! Let me know if you need anything else."
+            }
+        ],
+        "query": "Where did I recently buy a house?",
+        "expected_information": [
+            "Maple Street",
+            "Boulder",
+            "Colorado"
+        ],
+        "relevant_memory_ids": [
+            "LRR_001_msg_0"
+        ],
+        "difficulty": "medium",
+        "notes": "Tests retrieval of a fact stated early in the conversation, buried under many unrelated biology discussion turns."
+    },
+    {
+        "case_id": "LRR_002",
+        "category": "LONG_RANGE_RETRIEVAL",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "My best friend's name is Marcus and he lives in Berlin.",
+                "memory_source_id": "LRR_002_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "It's nice to have close friends, even if they're far away! Do you visit often?"
+            },
+            {
+                "role": "user",
+                "content": "Can you explain how blockchain works?",
+                "memory_source_id": "LRR_002_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Blockchain is a distributed ledger technology where transactions are recorded in blocks that are linked together cryptographically."
+            },
+            {
+                "role": "user",
+                "content": "What makes it secure?",
+                "memory_source_id": "LRR_002_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "The security comes from cryptographic hashing, decentralization, and consensus mechanisms."
+            },
+            {
+                "role": "user",
+                "content": "What about proof of work vs proof of stake?",
+                "memory_source_id": "LRR_002_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "Proof of work requires computational effort to validate transactions, while proof of stake selects validators based on the amount of cryptocurrency they hold."
+            },
+            {
+                "role": "user",
+                "content": "Which is more energy efficient?",
+                "memory_source_id": "LRR_002_msg_4"
+            },
+            {
+                "role": "assistant",
+                "content": "Proof of stake is significantly more energy efficient than proof of work."
+            },
+            {
+                "role": "user",
+                "content": "Tell me about smart contracts.",
+                "memory_source_id": "LRR_002_msg_5"
+            },
+            {
+                "role": "assistant",
+                "content": "Smart contracts are self-executing contracts with the terms written directly into code. They automatically execute when conditions are met."
+            },
+            {
+                "role": "user",
+                "content": "What platforms support them?",
+                "memory_source_id": "LRR_002_msg_6"
+            },
+            {
+                "role": "assistant",
+                "content": "Ethereum is the most popular platform, but Solana, Cardano, and Polkadot also support smart contracts."
+            },
+            {
+                "role": "user",
+                "content": "Interesting, thanks for the blockchain overview.",
+                "memory_source_id": "LRR_002_msg_7"
+            },
+            {
+                "role": "assistant",
+                "content": "You're welcome! It's a fascinating technology."
+            }
+        ],
+        "query": "What is my best friend's name and where does he live?",
+        "expected_information": [
+            "Marcus",
+            "Berlin"
+        ],
+        "relevant_memory_ids": [
+            "LRR_002_msg_0"
+        ],
+        "difficulty": "medium",
+        "notes": "Tests retrieval of a personal fact stated at the very beginning, followed by extensive unrelated blockchain discussion."
+    },
+    {
+        "case_id": "LRR_003",
+        "category": "LONG_RANGE_RETRIEVAL",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I have a doctor's appointment on November 3rd with Dr. Patel at the City Medical Center.",
+                "memory_source_id": "LRR_003_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "I've noted that. Would you like me to help you prepare any questions for the appointment?"
+            },
+            {
+                "role": "user",
+                "content": "No thanks. Hey, can you recommend some good sci-fi books?",
+                "memory_source_id": "LRR_003_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Sure! I'd recommend 'Dune' by Frank Herbert, 'Neuromancer' by William Gibson, and 'The Left Hand of Darkness' by Ursula K. Le Guin."
+            },
+            {
+                "role": "user",
+                "content": "I've read Dune. What about newer ones?",
+                "memory_source_id": "LRR_003_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "For newer sci-fi, try 'Project Hail Mary' by Andy Weir, 'The Ministry for the Future' by Kim Stanley Robinson, or 'Klara and the Sun' by Kazuo Ishiguro."
+            },
+            {
+                "role": "user",
+                "content": "What's Project Hail Mary about?",
+                "memory_source_id": "LRR_003_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "It's about an astronaut who wakes up alone on a spaceship with no memory, and must save Earth from an extinction-level threat."
+            },
+            {
+                "role": "user",
+                "content": "That sounds great. Also, what are some good cooking shows?",
+                "memory_source_id": "LRR_003_msg_4"
+            },
+            {
+                "role": "assistant",
+                "content": "Some popular ones are Chef's Table, The Bear, MasterChef, and Salt Fat Acid Heat."
+            },
+            {
+                "role": "user",
+                "content": "I love The Bear! Any shows similar?",
+                "memory_source_id": "LRR_003_msg_5"
+            },
+            {
+                "role": "assistant",
+                "content": "If you like The Bear, try Boiling Point, The Menu (movie), or Kitchen Confidential."
+            },
+            {
+                "role": "user",
+                "content": "Thanks for the suggestions!",
+                "memory_source_id": "LRR_003_msg_6"
+            },
+            {
+                "role": "assistant",
+                "content": "Happy to help! Enjoy your reading and watching."
+            }
+        ],
+        "query": "When is my doctor's appointment and who is it with?",
+        "expected_information": [
+            "November 3rd",
+            "Dr. Patel",
+            "City Medical Center"
+        ],
+        "relevant_memory_ids": [
+            "LRR_003_msg_0"
+        ],
+        "difficulty": "hard",
+        "notes": "Tests retrieval of a scheduled event stated early, buried under book and TV discussion."
+    },
+    {
+        "case_id": "LRR_004",
+        "category": "LONG_RANGE_RETRIEVAL",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I'm allergic to shellfish and penicillin.",
+                "memory_source_id": "LRR_004_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Those are important allergies to be aware of. I'll keep that in mind."
+            },
+            {
+                "role": "user",
+                "content": "Can you help me plan a road trip from San Francisco to Los Angeles?",
+                "memory_source_id": "LRR_004_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "I'd love to! The Pacific Coast Highway (Route 1) is the most scenic option. It's about 380 miles and takes roughly 6-7 hours without stops."
+            },
+            {
+                "role": "user",
+                "content": "What stops do you recommend?",
+                "memory_source_id": "LRR_004_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "I'd suggest Santa Cruz, Monterey, Big Sur, San Simeon (Hearst Castle), and Santa Barbara."
+            },
+            {
+                "role": "user",
+                "content": "How long should I spend at Big Sur?",
+                "memory_source_id": "LRR_004_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "At least half a day. The scenery is stunning, and there are great hiking trails like the Pfeiffer Falls Trail."
+            },
+            {
+                "role": "user",
+                "content": "What about places to eat along the way?",
+                "memory_source_id": "LRR_004_msg_4"
+            },
+            {
+                "role": "assistant",
+                "content": "Nepenthe in Big Sur has incredible views, Phil's Fish Market in Moss Landing is famous for cioppino, and La Super-Rica in Santa Barbara is a must."
+            },
+            {
+                "role": "user",
+                "content": "Any hotel recommendations in Santa Barbara?",
+                "memory_source_id": "LRR_004_msg_5"
+            },
+            {
+                "role": "assistant",
+                "content": "The Kimpton Canary Hotel downtown is lovely, or for something more budget-friendly, the Lavender Inn by the Sea."
+            },
+            {
+                "role": "user",
+                "content": "Great, this is really helpful for planning!",
+                "memory_source_id": "LRR_004_msg_6"
+            },
+            {
+                "role": "assistant",
+                "content": "Enjoy the trip! It's one of the best drives in the country."
+            }
+        ],
+        "query": "What medications and foods am I allergic to?",
+        "expected_information": [
+            "shellfish",
+            "penicillin"
+        ],
+        "relevant_memory_ids": [
+            "LRR_004_msg_0"
+        ],
+        "difficulty": "medium",
+        "notes": "Tests retrieval of critical health information stated before extensive travel planning discussion."
+    },
+    {
+        "case_id": "LRR_005",
+        "category": "LONG_RANGE_RETRIEVAL",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "My company's fiscal year ends on March 31st. We use SAP for our ERP system.",
+                "memory_source_id": "LRR_005_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Good to know! That's a common fiscal year end date. SAP is a solid choice for ERP."
+            },
+            {
+                "role": "user",
+                "content": "What's the difference between REST and GraphQL APIs?",
+                "memory_source_id": "LRR_005_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "REST uses fixed endpoints for each resource, while GraphQL lets clients specify exactly what data they need in a single query."
+            },
+            {
+                "role": "user",
+                "content": "Which is better for mobile apps?",
+                "memory_source_id": "LRR_005_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "GraphQL is often preferred for mobile because it reduces over-fetching and minimizes the number of requests."
+            },
+            {
+                "role": "user",
+                "content": "What about caching?",
+                "memory_source_id": "LRR_005_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "REST has simpler caching since each URL can be cached independently. GraphQL caching is more complex because all queries go through a single endpoint."
+            },
+            {
+                "role": "user",
+                "content": "How about versioning?",
+                "memory_source_id": "LRR_005_msg_4"
+            },
+            {
+                "role": "assistant",
+                "content": "REST typically uses URL versioning like /v1/users. GraphQL avoids versioning entirely by allowing clients to request only the fields they need."
+            },
+            {
+                "role": "user",
+                "content": "What about error handling differences?",
+                "memory_source_id": "LRR_005_msg_5"
+            },
+            {
+                "role": "assistant",
+                "content": "REST uses HTTP status codes. GraphQL always returns 200 and puts errors in the response body."
+            },
+            {
+                "role": "user",
+                "content": "Thanks, this comparison is very useful.",
+                "memory_source_id": "LRR_005_msg_6"
+            },
+            {
+                "role": "assistant",
+                "content": "Glad to help! Both have their strengths depending on the use case."
+            }
+        ],
+        "query": "When does my company's fiscal year end and what ERP system do we use?",
+        "expected_information": [
+            "March 31st",
+            "SAP"
+        ],
+        "relevant_memory_ids": [
+            "LRR_005_msg_0"
+        ],
+        "difficulty": "hard",
+        "notes": "Tests retrieval of business information buried under a long technical discussion about APIs."
+    },
+    {
+        "case_id": "LRR_006",
+        "category": "LONG_RANGE_RETRIEVAL",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "My sister's birthday is on February 14th. She loves orchids and dark chocolate.",
+                "memory_source_id": "LRR_006_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "A Valentine's Day birthday! That makes gift-giving interesting. Orchids and dark chocolate are great choices."
+            },
+            {
+                "role": "user",
+                "content": "Can you explain the differences between Python and Rust?",
+                "memory_source_id": "LRR_006_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Python is an interpreted, dynamically-typed language focused on readability. Rust is a compiled, statically-typed language focused on performance and safety."
+            },
+            {
+                "role": "user",
+                "content": "When would I choose Rust over Python?",
+                "memory_source_id": "LRR_006_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "Choose Rust for systems programming, performance-critical applications, or when you need memory safety without a garbage collector."
+            },
+            {
+                "role": "user",
+                "content": "What about Python's strengths?",
+                "memory_source_id": "LRR_006_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "Python excels at rapid prototyping, data science, machine learning, scripting, and has a massive ecosystem of libraries."
+            },
+            {
+                "role": "user",
+                "content": "Can they work together?",
+                "memory_source_id": "LRR_006_msg_4"
+            },
+            {
+                "role": "assistant",
+                "content": "Yes! You can write Python extensions in Rust using PyO3 or use maturin to build Python packages from Rust code."
+            },
+            {
+                "role": "user",
+                "content": "Interesting, how about Go compared to Rust?",
+                "memory_source_id": "LRR_006_msg_5"
+            },
+            {
+                "role": "assistant",
+                "content": "Go is simpler with garbage collection and excellent concurrency support. Rust offers more control over memory and generally better performance but has a steeper learning curve."
+            },
+            {
+                "role": "user",
+                "content": "Thanks for the comparisons!",
+                "memory_source_id": "LRR_006_msg_6"
+            },
+            {
+                "role": "assistant",
+                "content": "You're welcome! Each language has its sweet spot."
+            }
+        ],
+        "query": "When is my sister's birthday and what does she like?",
+        "expected_information": [
+            "February 14th",
+            "orchids",
+            "dark chocolate"
+        ],
+        "relevant_memory_ids": [
+            "LRR_006_msg_0"
+        ],
+        "difficulty": "hard",
+        "notes": "Tests retrieval of personal/family detail stated at the very beginning, buried under extensive programming language comparisons."
+    },
+    {
+        "case_id": "IU_001",
+        "category": "INFORMATION_UPDATE",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "My favorite programming language is Python.",
+                "memory_source_id": "IU_001_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Python is a great choice! It's versatile and has a huge ecosystem."
+            },
+            {
+                "role": "user",
+                "content": "I use it for most of my data science work.",
+                "memory_source_id": "IU_001_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Python is indeed the go-to for data science with libraries like pandas, scikit-learn, and TensorFlow."
+            },
+            {
+                "role": "user",
+                "content": "Actually, I've been learning Rust lately and I've completely switched to Rust for my new projects.",
+                "memory_source_id": "IU_001_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "That's a big switch! Rust is excellent for performance-critical work. What made you switch?"
+            },
+            {
+                "role": "user",
+                "content": "The performance gains and memory safety guarantees are incredible. Rust is now my preferred language.",
+                "memory_source_id": "IU_001_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "Those are compelling reasons. Rust's ownership model is unique and powerful."
+            }
+        ],
+        "query": "What is my current favorite programming language?",
+        "expected_information": [
+            "Rust"
+        ],
+        "relevant_memory_ids": [
+            "IU_001_msg_2",
+            "IU_001_msg_3"
+        ],
+        "difficulty": "easy",
+        "notes": "Tests whether the system uses the updated preference rather than the original one."
+    },
+    {
+        "case_id": "IU_002",
+        "category": "INFORMATION_UPDATE",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I live in an apartment in downtown Chicago.",
+                "memory_source_id": "IU_002_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Downtown Chicago is a vibrant area! How long have you been there?"
+            },
+            {
+                "role": "user",
+                "content": "About two years. But we're actually moving next month.",
+                "memory_source_id": "IU_002_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Oh exciting! Where are you moving to?"
+            },
+            {
+                "role": "user",
+                "content": "We bought a house in Evanston, just north of the city.",
+                "memory_source_id": "IU_002_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "Evanston is lovely! Great schools and easy access to the city. Congratulations on the house!"
+            },
+            {
+                "role": "user",
+                "content": "Thanks! We're moving in on the 15th.",
+                "memory_source_id": "IU_002_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "That's coming up soon. Do you need help with moving-related planning?"
+            }
+        ],
+        "query": "Where do I currently live?",
+        "expected_information": [
+            "Evanston"
+        ],
+        "relevant_memory_ids": [
+            "IU_002_msg_2"
+        ],
+        "difficulty": "easy",
+        "notes": "Tests whether the system recognizes the location update from Chicago to Evanston."
+    },
+    {
+        "case_id": "IU_003",
+        "category": "INFORMATION_UPDATE",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I work at Google as a product manager.",
+                "memory_source_id": "IU_003_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "That's a great role at a top company! What product area?"
+            },
+            {
+                "role": "user",
+                "content": "I'm on the Google Maps team.",
+                "memory_source_id": "IU_003_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Interesting! Maps is such a widely used product."
+            },
+            {
+                "role": "user",
+                "content": "I have some news - I just accepted an offer from Apple.",
+                "memory_source_id": "IU_003_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "Wow, congratulations! That's a big move. What role?"
+            },
+            {
+                "role": "user",
+                "content": "I'll be a senior product manager on the Vision Pro team.",
+                "memory_source_id": "IU_003_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "That's an exciting opportunity! The Vision Pro is cutting-edge technology."
+            },
+            {
+                "role": "user",
+                "content": "I start in two weeks. Really looking forward to it.",
+                "memory_source_id": "IU_003_msg_4"
+            },
+            {
+                "role": "assistant",
+                "content": "Best of luck with the transition! It sounds like a fantastic opportunity."
+            }
+        ],
+        "query": "Where do I work and what is my role?",
+        "expected_information": [
+            "Apple",
+            "senior product manager",
+            "Vision Pro"
+        ],
+        "relevant_memory_ids": [
+            "IU_003_msg_2",
+            "IU_003_msg_3"
+        ],
+        "difficulty": "medium",
+        "notes": "Tests job change update from Google/Maps PM to Apple/Vision Pro senior PM."
+    },
+    {
+        "case_id": "IU_004",
+        "category": "INFORMATION_UPDATE",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "My phone number is 555-0123.",
+                "memory_source_id": "IU_004_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Noted!"
+            },
+            {
+                "role": "user",
+                "content": "I just got a new phone. My new number is 555-0456.",
+                "memory_source_id": "IU_004_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Got it, I'll update that. Your new number is 555-0456."
+            },
+            {
+                "role": "user",
+                "content": "Yes, the old number 555-0123 is no longer active.",
+                "memory_source_id": "IU_004_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "Understood. I'll only use 555-0456 going forward."
+            }
+        ],
+        "query": "What is my current phone number?",
+        "expected_information": [
+            "555-0456"
+        ],
+        "relevant_memory_ids": [
+            "IU_004_msg_1"
+        ],
+        "difficulty": "easy",
+        "notes": "Tests simple factual update of contact information with explicit invalidation of old data."
+    },
+    {
+        "case_id": "IU_005",
+        "category": "INFORMATION_UPDATE",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I'm following a keto diet. No carbs for me!",
+                "memory_source_id": "IU_005_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Keto can be effective! Are you tracking your macros?"
+            },
+            {
+                "role": "user",
+                "content": "Yes, I've been on it for three months now.",
+                "memory_source_id": "IU_005_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "How's it going?"
+            },
+            {
+                "role": "user",
+                "content": "Actually, I spoke with my nutritionist Dr. Kim and she recommended I switch to a Mediterranean diet instead. It's better for my heart health.",
+                "memory_source_id": "IU_005_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "The Mediterranean diet is highly regarded for cardiovascular health! That's solid advice."
+            },
+            {
+                "role": "user",
+                "content": "So I'm transitioning now. More whole grains, olive oil, fish, and vegetables.",
+                "memory_source_id": "IU_005_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "Those are excellent staples. The Mediterranean diet is one of the most studied and recommended diets."
+            },
+            {
+                "role": "user",
+                "content": "I'm already feeling better with the variety.",
+                "memory_source_id": "IU_005_msg_4"
+            },
+            {
+                "role": "assistant",
+                "content": "That's great to hear! Variety often makes it easier to stick with a diet long-term."
+            }
+        ],
+        "query": "What diet am I currently following and why?",
+        "expected_information": [
+            "Mediterranean diet",
+            "heart health"
+        ],
+        "relevant_memory_ids": [
+            "IU_005_msg_2"
+        ],
+        "difficulty": "medium",
+        "notes": "Tests diet change update from keto to Mediterranean, including the reason for the change."
+    },
+    {
+        "case_id": "IU_006",
+        "category": "INFORMATION_UPDATE",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "My project deadline is December 1st.",
+                "memory_source_id": "IU_006_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "I'll note that. That gives you about two months."
+            },
+            {
+                "role": "user",
+                "content": "We had a meeting today and the deadline has been pushed to January 15th because of the new requirements.",
+                "memory_source_id": "IU_006_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Good that you have more time! What are the new requirements?"
+            },
+            {
+                "role": "user",
+                "content": "We need to add multi-language support and improve the API documentation.",
+                "memory_source_id": "IU_006_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "Those are significant additions. January 15th should give you enough time."
+            },
+            {
+                "role": "user",
+                "content": "Update: I just got an email. The deadline has been moved again to February 1st.",
+                "memory_source_id": "IU_006_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "Another extension! At least you'll have ample time to do thorough work."
+            },
+            {
+                "role": "user",
+                "content": "Yeah, the stakeholders want to add accessibility features too.",
+                "memory_source_id": "IU_006_msg_4"
+            },
+            {
+                "role": "assistant",
+                "content": "Accessibility is important. It's good they're prioritizing it."
+            }
+        ],
+        "query": "What is the current deadline for my project?",
+        "expected_information": [
+            "February 1st"
+        ],
+        "relevant_memory_ids": [
+            "IU_006_msg_3"
+        ],
+        "difficulty": "hard",
+        "notes": "Tests tracking of a value that was updated multiple times (Dec 1 -> Jan 15 -> Feb 1). Only the final value should be returned."
+    },
+    {
+        "case_id": "IU_007",
+        "category": "INFORMATION_UPDATE",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "My primary doctor is Dr. Johnson at Riverside Clinic.",
+                "memory_source_id": "IU_007_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Got it. Is everything okay?"
+            },
+            {
+                "role": "user",
+                "content": "Yes, just routine stuff. Actually, Dr. Johnson retired last month.",
+                "memory_source_id": "IU_007_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Oh! Do you have a new doctor?"
+            },
+            {
+                "role": "user",
+                "content": "Yes, I've been transferred to Dr. Chen at the same clinic. She specializes in internal medicine.",
+                "memory_source_id": "IU_007_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "That's a smooth transition at least, staying at the same clinic."
+            },
+            {
+                "role": "user",
+                "content": "Exactly. Dr. Chen has been great so far. Very thorough.",
+                "memory_source_id": "IU_007_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "That's reassuring! Having a good primary care doctor makes a big difference."
+            }
+        ],
+        "query": "Who is my current primary doctor?",
+        "expected_information": [
+            "Dr. Chen",
+            "Riverside Clinic",
+            "internal medicine"
+        ],
+        "relevant_memory_ids": [
+            "IU_007_msg_2",
+            "IU_007_msg_3",
+            "IU_007_msg_0"
+        ],
+        "difficulty": "medium",
+        "notes": "Tests doctor change update with explicit invalidation (retirement) and replacement details."
+    },
+    {
+        "case_id": "CI_001",
+        "category": "CONFLICTING_INFORMATION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I'm going to Tokyo for vacation in March.",
+                "memory_source_id": "CI_001_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Tokyo in March is beautiful! Cherry blossom season usually starts around late March."
+            },
+            {
+                "role": "user",
+                "content": "I can't wait to see the cherry blossoms!",
+                "memory_source_id": "CI_001_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "They're stunning! Have you booked your hotel yet?"
+            },
+            {
+                "role": "user",
+                "content": "Actually, I just changed my plans. We're going to Seoul instead of Tokyo.",
+                "memory_source_id": "CI_001_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "Seoul is also wonderful in March! What made you change your mind?"
+            },
+            {
+                "role": "user",
+                "content": "My friend recommended it and the flights were much cheaper. We're still going in March though.",
+                "memory_source_id": "CI_001_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "Great choice! Seoul has amazing food, history, and culture."
+            }
+        ],
+        "query": "Where am I going for vacation and when?",
+        "expected_information": [
+            "Seoul",
+            "March"
+        ],
+        "relevant_memory_ids": [
+            "CI_001_msg_3",
+            "CI_001_msg_0",
+            "CI_001_msg_2"
+        ],
+        "difficulty": "easy",
+        "notes": "Tests resolution of conflicting travel destinations. The system should prefer the corrected/latest information."
+    },
+    {
+        "case_id": "CI_002",
+        "category": "CONFLICTING_INFORMATION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I take the train to work every day. It's a 45-minute commute.",
+                "memory_source_id": "CI_002_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "That's not too bad! Do you use the time productively?"
+            },
+            {
+                "role": "user",
+                "content": "I usually read. But actually, since last week I've been driving to work because they changed the train schedule and it no longer works for me.",
+                "memory_source_id": "CI_002_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "That's frustrating when schedules change! How long is the drive?"
+            },
+            {
+                "role": "user",
+                "content": "About 30 minutes without traffic, but it can be up to an hour in rush hour.",
+                "memory_source_id": "CI_002_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "Traffic can be unpredictable. Do you miss the train commute?"
+            },
+            {
+                "role": "user",
+                "content": "I do miss reading during the commute. But driving is more flexible.",
+                "memory_source_id": "CI_002_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "You could try audiobooks while driving!"
+            }
+        ],
+        "query": "How do I currently commute to work?",
+        "expected_information": [
+            "driving"
+        ],
+        "relevant_memory_ids": [
+            "CI_002_msg_1",
+            "CI_002_msg_3"
+        ],
+        "difficulty": "medium",
+        "notes": "Tests conflict between original commute method (train) and updated method (driving) with explicit reason for change."
+    },
+    {
+        "case_id": "CI_003",
+        "category": "CONFLICTING_INFORMATION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "My budget for the home renovation is $30,000.",
+                "memory_source_id": "CI_003_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "That's a reasonable budget. What areas are you renovating?"
+            },
+            {
+                "role": "user",
+                "content": "Kitchen and bathroom.",
+                "memory_source_id": "CI_003_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Those are the rooms that add the most value. Do you have contractors lined up?"
+            },
+            {
+                "role": "user",
+                "content": "Yes, but after getting the quotes, we've decided to increase the budget to $45,000 to include new flooring throughout the house.",
+                "memory_source_id": "CI_003_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "New flooring can really transform a home! $45,000 should cover all three nicely."
+            },
+            {
+                "role": "user",
+                "content": "Wait, I just talked to my partner. We're actually capping it at $40,000. The flooring will only cover the main living areas.",
+                "memory_source_id": "CI_003_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "That's still a solid budget for kitchen, bathroom, and partial flooring."
+            }
+        ],
+        "query": "What is our current budget for the home renovation?",
+        "expected_information": [
+            "$40,000"
+        ],
+        "relevant_memory_ids": [
+            "CI_003_msg_3"
+        ],
+        "difficulty": "hard",
+        "notes": "Tests a triple-conflicting value ($30k -> $45k -> $40k). Only the most recent value should be returned."
+    },
+    {
+        "case_id": "CI_004",
+        "category": "CONFLICTING_INFORMATION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "Our team meeting is on Tuesdays at 10 AM.",
+                "memory_source_id": "CI_004_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Got it! Is that a weekly meeting?"
+            },
+            {
+                "role": "user",
+                "content": "Yes, weekly. Oh wait, I just got a message from my manager. The meeting has been moved to Thursdays at 2 PM starting next week.",
+                "memory_source_id": "CI_004_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Noted! Thursday at 2 PM. Is that permanent?"
+            },
+            {
+                "role": "user",
+                "content": "Yes, the new time works better for the team in the London office.",
+                "memory_source_id": "CI_004_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "That makes sense with the time zone difference."
+            }
+        ],
+        "query": "When is our team meeting?",
+        "expected_information": [
+            "Thursday",
+            "2 PM"
+        ],
+        "relevant_memory_ids": [
+            "CI_004_msg_1"
+        ],
+        "difficulty": "easy",
+        "notes": "Tests schedule conflict resolution. The updated meeting time should override the original."
+    },
+    {
+        "case_id": "CI_005",
+        "category": "CONFLICTING_INFORMATION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I'm taking French classes this semester.",
+                "memory_source_id": "CI_005_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Magnifique! How's it going?"
+            },
+            {
+                "role": "user",
+                "content": "It was going well, but I had to drop French because of a scheduling conflict with my required statistics course.",
+                "memory_source_id": "CI_005_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "That's a bummer! Will you pick it up again?"
+            },
+            {
+                "role": "user",
+                "content": "Maybe next semester. For now I'm taking Spanish instead since it fits my schedule.",
+                "memory_source_id": "CI_005_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "Spanish is also a wonderful language to learn! Very practical too."
+            },
+            {
+                "role": "user",
+                "content": "My Spanish professor Dr. Vega is excellent. I'm really enjoying the class.",
+                "memory_source_id": "CI_005_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "Having a great professor makes all the difference!"
+            }
+        ],
+        "query": "What language course am I currently taking?",
+        "expected_information": [
+            "Spanish"
+        ],
+        "relevant_memory_ids": [
+            "CI_005_msg_2",
+            "CI_005_msg_3"
+        ],
+        "difficulty": "medium",
+        "notes": "Tests conflict resolution with context: user dropped French and switched to Spanish. Should not say French."
+    },
+    {
+        "case_id": "CI_006",
+        "category": "CONFLICTING_INFORMATION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I want to get a MacBook Pro for my next laptop.",
+                "memory_source_id": "CI_006_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Great choice! The MacBook Pro lineup is very strong right now."
+            },
+            {
+                "role": "user",
+                "content": "I was thinking the 14-inch M3 Pro model.",
+                "memory_source_id": "CI_006_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "That's a fantastic laptop. Excellent performance and battery life."
+            },
+            {
+                "role": "user",
+                "content": "But after researching more, I think I need a Windows machine for some work-specific software that doesn't run on Mac.",
+                "memory_source_id": "CI_006_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "That's an important consideration. What Windows laptop are you looking at?"
+            },
+            {
+                "role": "user",
+                "content": "I'm going with the ThinkPad X1 Carbon. It has great build quality and keyboard, and runs all my work software.",
+                "memory_source_id": "CI_006_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "The X1 Carbon is an excellent business laptop. Great keyboard and very portable."
+            },
+            {
+                "role": "user",
+                "content": "I've already ordered it. Should arrive next week.",
+                "memory_source_id": "CI_006_msg_4"
+            },
+            {
+                "role": "assistant",
+                "content": "Nice! Enjoy your new ThinkPad!"
+            }
+        ],
+        "query": "What laptop did I decide to get?",
+        "expected_information": [
+            "ThinkPad X1 Carbon"
+        ],
+        "relevant_memory_ids": [
+            "CI_006_msg_3"
+        ],
+        "difficulty": "medium",
+        "notes": "Tests conflict between initial preference (MacBook Pro) and final decision (ThinkPad X1 Carbon) with explicit reasoning."
+    },
+    {
+        "case_id": "II_001",
+        "category": "IRRELEVANT_INFORMATION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I need to pick up my prescription for metformin at CVS on Oak Street.",
+                "memory_source_id": "II_001_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Got it! Is that your regular pharmacy?"
+            },
+            {
+                "role": "user",
+                "content": "Yes. Hey, what do you think about the new iPhone?",
+                "memory_source_id": "II_001_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "The latest iPhone has some impressive features like the new camera system and the A17 chip."
+            },
+            {
+                "role": "user",
+                "content": "What about the camera specifically?",
+                "memory_source_id": "II_001_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "It has a 48MP main sensor with improved computational photography and a new 5x telephoto lens."
+            },
+            {
+                "role": "user",
+                "content": "How does it compare to Samsung?",
+                "memory_source_id": "II_001_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "Both are excellent. Samsung offers more customization and zoom range, while iPhone excels in video and ecosystem integration."
+            },
+            {
+                "role": "user",
+                "content": "What about battery life?",
+                "memory_source_id": "II_001_msg_4"
+            },
+            {
+                "role": "assistant",
+                "content": "The latest iPhones have significantly improved battery life, often lasting a full day of heavy use."
+            },
+            {
+                "role": "user",
+                "content": "And the new Android features?",
+                "memory_source_id": "II_001_msg_5"
+            },
+            {
+                "role": "assistant",
+                "content": "Android 14 brought improved privacy controls, better customization, and enhanced multitasking."
+            },
+            {
+                "role": "user",
+                "content": "Cool. What about foldable phones?",
+                "memory_source_id": "II_001_msg_6"
+            },
+            {
+                "role": "assistant",
+                "content": "Samsung's Galaxy Z Fold and Z Flip are the market leaders. Google also has the Pixel Fold now."
+            },
+            {
+                "role": "user",
+                "content": "Interesting, thanks for all the phone info!",
+                "memory_source_id": "II_001_msg_7"
+            },
+            {
+                "role": "assistant",
+                "content": "Anytime! Let me know if you want to dive deeper into any of these."
+            }
+        ],
+        "query": "What prescription do I need to pick up and from where?",
+        "expected_information": [
+            "metformin",
+            "CVS",
+            "Oak Street"
+        ],
+        "relevant_memory_ids": [
+            "II_001_msg_0"
+        ],
+        "difficulty": "medium",
+        "notes": "Tests filtering out extensive irrelevant phone discussion to retrieve the key medical/errand information."
+    },
+    {
+        "case_id": "II_002",
+        "category": "IRRELEVANT_INFORMATION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "My daughter has a piano recital at Lincoln Hall on December 12th at 3 PM.",
+                "memory_source_id": "II_002_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "How exciting! Is she nervous?"
+            },
+            {
+                "role": "user",
+                "content": "A little. Anyway, I've been wondering about the history of the Roman Empire.",
+                "memory_source_id": "II_002_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "The Roman Empire is a fascinating topic! It spanned from 27 BC to 476 AD in the West."
+            },
+            {
+                "role": "user",
+                "content": "Who were the most notable emperors?",
+                "memory_source_id": "II_002_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "Augustus, Trajan, Hadrian, and Marcus Aurelius are often considered the greatest. Nero and Caligula are infamous for other reasons."
+            },
+            {
+                "role": "user",
+                "content": "What caused the fall of Rome?",
+                "memory_source_id": "II_002_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "It was a combination of factors: military overextension, economic troubles, political instability, and barbarian invasions."
+            },
+            {
+                "role": "user",
+                "content": "How big was the empire at its peak?",
+                "memory_source_id": "II_002_msg_4"
+            },
+            {
+                "role": "assistant",
+                "content": "At its peak under Trajan around 117 AD, the empire covered about 5 million square kilometers."
+            },
+            {
+                "role": "user",
+                "content": "What about the Eastern Roman Empire?",
+                "memory_source_id": "II_002_msg_5"
+            },
+            {
+                "role": "assistant",
+                "content": "The Eastern Roman Empire, or Byzantine Empire, survived until 1453 when Constantinople fell to the Ottoman Turks."
+            },
+            {
+                "role": "user",
+                "content": "Fascinating stuff. Thanks for the history lesson!",
+                "memory_source_id": "II_002_msg_6"
+            },
+            {
+                "role": "assistant",
+                "content": "History is endlessly interesting! Happy to discuss more anytime."
+            }
+        ],
+        "query": "When and where is my daughter's piano recital?",
+        "expected_information": [
+            "Lincoln Hall",
+            "December 12th",
+            "3 PM"
+        ],
+        "relevant_memory_ids": [
+            "II_002_msg_0"
+        ],
+        "difficulty": "medium",
+        "notes": "Tests filtering extensive Roman history discussion to retrieve the personal scheduling information."
+    },
+    {
+        "case_id": "II_003",
+        "category": "IRRELEVANT_INFORMATION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I need to renew my passport. It expires on January 31st and my passport number is AB1234567.",
+                "memory_source_id": "II_003_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "You should start the renewal process soon! It can take 6-8 weeks."
+            },
+            {
+                "role": "user",
+                "content": "Good point. Hey, can you explain quantum computing to me?",
+                "memory_source_id": "II_003_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Quantum computing uses quantum mechanical phenomena like superposition and entanglement to process information."
+            },
+            {
+                "role": "user",
+                "content": "What's superposition?",
+                "memory_source_id": "II_003_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "Unlike classical bits that are 0 or 1, quantum bits (qubits) can exist in a superposition of both states simultaneously."
+            },
+            {
+                "role": "user",
+                "content": "And entanglement?",
+                "memory_source_id": "II_003_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "Entanglement is when two qubits become correlated so that measuring one instantly affects the other, regardless of distance."
+            },
+            {
+                "role": "user",
+                "content": "What companies are leading quantum computing?",
+                "memory_source_id": "II_003_msg_4"
+            },
+            {
+                "role": "assistant",
+                "content": "IBM, Google, Microsoft, and startups like IonQ and Rigetti are at the forefront."
+            },
+            {
+                "role": "user",
+                "content": "Will quantum computers replace classical ones?",
+                "memory_source_id": "II_003_msg_5"
+            },
+            {
+                "role": "assistant",
+                "content": "Not likely. They'll complement classical computers for specific problems like cryptography, optimization, and molecular simulation."
+            },
+            {
+                "role": "user",
+                "content": "When will we have practical quantum computers?",
+                "memory_source_id": "II_003_msg_6"
+            },
+            {
+                "role": "assistant",
+                "content": "We're still likely years away from fault-tolerant quantum computers that can solve real-world problems at scale."
+            },
+            {
+                "role": "user",
+                "content": "Thanks for the quantum lesson!",
+                "memory_source_id": "II_003_msg_7"
+            },
+            {
+                "role": "assistant",
+                "content": "It's a fascinating field! Happy to explore more."
+            }
+        ],
+        "query": "When does my passport expire?",
+        "expected_information": [
+            "January 31st"
+        ],
+        "relevant_memory_ids": [
+            "II_003_msg_0"
+        ],
+        "difficulty": "easy",
+        "notes": "Tests retrieval of simple personal deadline amidst extensive quantum computing discussion."
+    },
+    {
+        "case_id": "II_004",
+        "category": "IRRELEVANT_INFORMATION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I've been having lower back pain for about two weeks. I think it's from sitting too much at my standing desk that broke.",
+                "memory_source_id": "II_004_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "I'm sorry to hear that. Have you seen a doctor about it?"
+            },
+            {
+                "role": "user",
+                "content": "Not yet, but I have an appointment next Monday with my chiropractor Dr. Walsh.",
+                "memory_source_id": "II_004_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Good. In the meantime, gentle stretching and walking can help."
+            },
+            {
+                "role": "user",
+                "content": "Thanks. By the way, can you explain how the stock market works?",
+                "memory_source_id": "II_004_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "The stock market is where shares of publicly traded companies are bought and sold. Prices are determined by supply and demand."
+            },
+            {
+                "role": "user",
+                "content": "What's the difference between stocks and bonds?",
+                "memory_source_id": "II_004_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "Stocks represent ownership in a company, while bonds are loans you make to a company or government that pay interest."
+            },
+            {
+                "role": "user",
+                "content": "Should I invest in index funds?",
+                "memory_source_id": "II_004_msg_4"
+            },
+            {
+                "role": "assistant",
+                "content": "Index funds are popular for their low fees and diversification. They track a market index like the S&P 500."
+            },
+            {
+                "role": "user",
+                "content": "What about crypto?",
+                "memory_source_id": "II_004_msg_5"
+            },
+            {
+                "role": "assistant",
+                "content": "Cryptocurrency is highly volatile and speculative. It can be part of a diversified portfolio but shouldn't be the majority."
+            },
+            {
+                "role": "user",
+                "content": "Thanks for the financial overview!",
+                "memory_source_id": "II_004_msg_6"
+            },
+            {
+                "role": "assistant",
+                "content": "Happy to help! Consider consulting a financial advisor for personalized advice."
+            }
+        ],
+        "query": "What health issue am I dealing with and who am I seeing about it?",
+        "expected_information": [
+            "lower back pain",
+            "Dr. Walsh",
+            "chiropractor"
+        ],
+        "relevant_memory_ids": [
+            "II_004_msg_0",
+            "II_004_msg_1"
+        ],
+        "difficulty": "hard",
+        "notes": "Tests retrieval of health-related information buried within financial discussion."
+    },
+    {
+        "case_id": "II_005",
+        "category": "IRRELEVANT_INFORMATION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "My car is a 2022 Tesla Model 3 in midnight blue. The license plate is XYZ 789.",
+                "memory_source_id": "II_005_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Nice car! Do you like it?"
+            },
+            {
+                "role": "user",
+                "content": "Love it! Hey, what are some good strategies for learning a new language?",
+                "memory_source_id": "II_005_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Immersion is key! Also try spaced repetition, conversation practice, and consuming media in the target language."
+            },
+            {
+                "role": "user",
+                "content": "What apps do you recommend?",
+                "memory_source_id": "II_005_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "Duolingo for basics, Anki for vocabulary, and iTalki for conversation practice with native speakers."
+            },
+            {
+                "role": "user",
+                "content": "How long does it take to become fluent?",
+                "memory_source_id": "II_005_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "It depends on the language. For English speakers, Spanish might take 600 hours, while Mandarin could take 2200+ hours."
+            },
+            {
+                "role": "user",
+                "content": "Any tips for pronunciation?",
+                "memory_source_id": "II_005_msg_4"
+            },
+            {
+                "role": "assistant",
+                "content": "Listen and repeat often, record yourself, and use minimal pairs to distinguish similar sounds."
+            },
+            {
+                "role": "user",
+                "content": "Good tips, thanks!",
+                "memory_source_id": "II_005_msg_5"
+            },
+            {
+                "role": "assistant",
+                "content": "Good luck with your language learning journey!"
+            }
+        ],
+        "query": "What car do I drive?",
+        "expected_information": [
+            "2022 Tesla Model 3",
+            "midnight blue"
+        ],
+        "relevant_memory_ids": [
+            "II_005_msg_0"
+        ],
+        "difficulty": "easy",
+        "notes": "Tests retrieval of vehicle information surrounded by language learning discussion."
+    },
+    {
+        "case_id": "II_006",
+        "category": "IRRELEVANT_INFORMATION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I'm launching a startup called NovaTech. We're building AI-powered tools for small businesses. My co-founder is Priya Sharma.",
+                "memory_source_id": "II_006_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Exciting venture! What stage are you at?"
+            },
+            {
+                "role": "user",
+                "content": "We just closed a $500K seed round. But let me ask you about something else - can you explain how nuclear fusion works?",
+                "memory_source_id": "II_006_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Nuclear fusion is the process of combining light atomic nuclei to form heavier ones, releasing enormous energy."
+            },
+            {
+                "role": "user",
+                "content": "How is it different from fission?",
+                "memory_source_id": "II_006_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "Fission splits heavy atoms apart, while fusion joins light atoms together. Fusion produces more energy and less radioactive waste."
+            },
+            {
+                "role": "user",
+                "content": "Why don't we have fusion power plants yet?",
+                "memory_source_id": "II_006_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "The engineering challenges are immense. You need temperatures of 100 million degrees and containment methods like tokamaks or laser-based inertial confinement."
+            },
+            {
+                "role": "user",
+                "content": "What about ITER?",
+                "memory_source_id": "II_006_msg_4"
+            },
+            {
+                "role": "assistant",
+                "content": "ITER is the world's largest fusion experiment in France, expected to achieve net energy gain. It's a collaboration of 35 nations."
+            },
+            {
+                "role": "user",
+                "content": "When will fusion energy be commercially available?",
+                "memory_source_id": "II_006_msg_5"
+            },
+            {
+                "role": "assistant",
+                "content": "Most estimates say 2040-2060 at the earliest, though some private companies are more optimistic."
+            },
+            {
+                "role": "user",
+                "content": "Fascinating! Thanks for explaining.",
+                "memory_source_id": "II_006_msg_6"
+            },
+            {
+                "role": "assistant",
+                "content": "It's a topic with enormous potential for humanity's future!"
+            }
+        ],
+        "query": "What is my startup called, what does it do, and who is my co-founder?",
+        "expected_information": [
+            "NovaTech",
+            "AI-powered tools",
+            "small businesses",
+            "Priya Sharma"
+        ],
+        "relevant_memory_ids": [
+            "II_006_msg_0"
+        ],
+        "difficulty": "hard",
+        "notes": "Tests retrieval of multiple business details buried under extensive nuclear physics discussion."
+    },
+    {
+        "case_id": "RI_001",
+        "category": "REDUNDANT_INFORMATION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I love Italian food, especially pasta.",
+                "memory_source_id": "RI_001_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Italian cuisine is wonderful! What's your favorite pasta dish?"
+            },
+            {
+                "role": "user",
+                "content": "Definitely carbonara. By the way, Italian food is my absolute favorite cuisine.",
+                "memory_source_id": "RI_001_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Carbonara is a classic! The combination of egg, cheese, and guanciale is perfect."
+            },
+            {
+                "role": "user",
+                "content": "When it comes to food, nothing beats Italian for me. Pasta, pizza, risotto - I love it all.",
+                "memory_source_id": "RI_001_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "You're clearly passionate about Italian food! Have you been to Italy?"
+            },
+            {
+                "role": "user",
+                "content": "Yes, twice! The food in Rome was incredible. My favorite type of food is definitely Italian, as I mentioned.",
+                "memory_source_id": "RI_001_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "Rome is a food lover's paradise! What was your favorite restaurant there?"
+            }
+        ],
+        "query": "What is my favorite type of cuisine?",
+        "expected_information": [
+            "Italian"
+        ],
+        "relevant_memory_ids": [
+            "RI_001_msg_3",
+            "RI_001_msg_0",
+            "RI_001_msg_1",
+            "RI_001_msg_2"
+        ],
+        "difficulty": "easy",
+        "notes": "Tests handling of the same preference stated four times in slightly different ways. Should produce one consolidated fact."
+    },
+    {
+        "case_id": "RI_002",
+        "category": "REDUNDANT_INFORMATION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I wake up at 5:30 AM every morning to go running.",
+                "memory_source_id": "RI_002_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "That's impressive discipline! How far do you usually run?"
+            },
+            {
+                "role": "user",
+                "content": "About 5 miles. My alarm goes off at 5:30 every day for my morning jog.",
+                "memory_source_id": "RI_002_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Five miles is a solid daily run! Do you run every day?"
+            },
+            {
+                "role": "user",
+                "content": "Six days a week. I rest on Sundays. But yeah, five-thirty AM sharp, I'm up and out the door for a run.",
+                "memory_source_id": "RI_002_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "Having a consistent routine is key. What route do you usually take?"
+            },
+            {
+                "role": "user",
+                "content": "Through Riverside Park. I start my run every morning at 5:30, rain or shine.",
+                "memory_source_id": "RI_002_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "That's dedication! Riverside Park must be beautiful in the early morning."
+            }
+        ],
+        "query": "What time do I wake up and what do I do?",
+        "expected_information": [
+            "5:30 AM",
+            "running"
+        ],
+        "relevant_memory_ids": [
+            "RI_002_msg_0"
+        ],
+        "difficulty": "easy",
+        "notes": "Tests handling of repeated wake-up time and running habit stated identically four times."
+    },
+    {
+        "case_id": "RI_003",
+        "category": "REDUNDANT_INFORMATION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I'm working on a machine learning project to predict customer churn.",
+                "memory_source_id": "RI_003_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Customer churn prediction is a great ML application! What model are you using?"
+            },
+            {
+                "role": "user",
+                "content": "XGBoost. Our ML project focuses on predicting which customers will stop using our service.",
+                "memory_source_id": "RI_003_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "XGBoost is excellent for tabular data. What features are you using?"
+            },
+            {
+                "role": "user",
+                "content": "Usage frequency, last login, support tickets, and payment history. The whole project is about anticipating customer churn using machine learning.",
+                "memory_source_id": "RI_003_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "Those are strong predictive features. What's your current accuracy?"
+            },
+            {
+                "role": "user",
+                "content": "About 87%. We're building an ML system that predicts customer attrition.",
+                "memory_source_id": "RI_003_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "87% is good! Have you tried SHAP values for feature importance?"
+            }
+        ],
+        "query": "What project am I working on and what technology am I using?",
+        "expected_information": [
+            "machine learning",
+            "customer churn prediction",
+            "XGBoost"
+        ],
+        "relevant_memory_ids": [
+            "RI_003_msg_1",
+            "RI_003_msg_2",
+            "RI_003_msg_0"
+        ],
+        "difficulty": "medium",
+        "notes": "Tests handling of project description stated in semantically similar but different ways (churn, stop using service, customer attrition)."
+    },
+    {
+        "case_id": "RI_004",
+        "category": "REDUNDANT_INFORMATION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "My wife and I celebrate our anniversary on October 10th.",
+                "memory_source_id": "RI_004_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "That's lovely! How many years have you been married?"
+            },
+            {
+                "role": "user",
+                "content": "Seven years. Our wedding anniversary falls on the 10th of October.",
+                "memory_source_id": "RI_004_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Congratulations! Seven years is wonderful."
+            },
+            {
+                "role": "user",
+                "content": "Do you have gift ideas? Our anniversary date is October 10th and it's coming up.",
+                "memory_source_id": "RI_004_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "For a seventh anniversary, the traditional gift is copper or wool. Some modern alternatives include desk sets or pen sets."
+            },
+            {
+                "role": "user",
+                "content": "Those are good ideas. I want to make our Oct 10 anniversary special this year.",
+                "memory_source_id": "RI_004_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "How about a surprise dinner at a nice restaurant?"
+            }
+        ],
+        "query": "When is my wedding anniversary?",
+        "expected_information": [
+            "October 10th"
+        ],
+        "relevant_memory_ids": [
+            "RI_004_msg_0",
+            "RI_004_msg_2"
+        ],
+        "difficulty": "easy",
+        "notes": "Tests consolidation of a date mentioned four times in varying formats."
+    },
+    {
+        "case_id": "RI_005",
+        "category": "REDUNDANT_INFORMATION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I suffer from chronic migraines. They usually happen 2-3 times a month.",
+                "memory_source_id": "RI_005_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "I'm sorry to hear that. Are you on any medication?"
+            },
+            {
+                "role": "user",
+                "content": "Yes, sumatriptan. My migraines are a real problem - I get them a few times monthly.",
+                "memory_source_id": "RI_005_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Sumatriptan is commonly prescribed for migraines. Does it help?"
+            },
+            {
+                "role": "user",
+                "content": "It helps when I catch them early. The recurring headaches, the migraines I mean, are triggered by stress and bright lights.",
+                "memory_source_id": "RI_005_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "Knowing your triggers is important. Have you tried preventive measures?"
+            },
+            {
+                "role": "user",
+                "content": "I use blue-light-blocking glasses. These persistent migraines that I deal with monthly are really affecting my productivity.",
+                "memory_source_id": "RI_005_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "Have you considered talking to a neurologist about preventive medication?"
+            }
+        ],
+        "query": "What chronic health condition do I have and what triggers it?",
+        "expected_information": [
+            "chronic migraines",
+            "stress",
+            "bright lights",
+            "sumatriptan"
+        ],
+        "relevant_memory_ids": [
+            "RI_005_msg_2",
+            "RI_005_msg_0",
+            "RI_005_msg_1"
+        ],
+        "difficulty": "medium",
+        "notes": "Tests consolidation of health information stated redundantly across multiple turns with slight phrasing variations."
+    },
+    {
+        "case_id": "RI_006",
+        "category": "REDUNDANT_INFORMATION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I'm learning to play the guitar. I practice for an hour each evening.",
+                "memory_source_id": "RI_006_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "That's great dedication! How long have you been learning?"
+            },
+            {
+                "role": "user",
+                "content": "About six months. I do my guitar practice every night for about sixty minutes.",
+                "memory_source_id": "RI_006_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Six months is a good foundation! What style are you learning?"
+            },
+            {
+                "role": "user",
+                "content": "Acoustic fingerstyle. My daily evening guitar session is an hour, as I said.",
+                "memory_source_id": "RI_006_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "Fingerstyle is beautiful! Are you using any particular learning resources?"
+            },
+            {
+                "role": "user",
+                "content": "JustinGuitar.com and my teacher Marco. I do about 60 min of guitar every evening after dinner.",
+                "memory_source_id": "RI_006_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "That's a great combination of online and in-person learning!"
+            }
+        ],
+        "query": "What instrument am I learning and how much do I practice?",
+        "expected_information": [
+            "guitar",
+            "one hour",
+            "every evening"
+        ],
+        "relevant_memory_ids": [
+            "RI_006_msg_1",
+            "RI_006_msg_2",
+            "RI_006_msg_0",
+            "RI_006_msg_3"
+        ],
+        "difficulty": "easy",
+        "notes": "Tests consolidation of practice habit stated four times in slightly different wordings."
+    },
+    {
+        "case_id": "MHR_001",
+        "category": "MULTI_HOP_RELATIONSHIP",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I'm working on a project called Apollo.",
+                "memory_source_id": "MHR_001_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Interesting! What's Project Apollo about?"
+            },
+            {
+                "role": "user",
+                "content": "Apollo is a data pipeline system. It uses Apache Kafka for message streaming.",
+                "memory_source_id": "MHR_001_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Kafka is an excellent choice for high-throughput streaming. What's the data volume like?"
+            },
+            {
+                "role": "user",
+                "content": "We process about 10 million events per day. The Kafka cluster is managed by our DevOps lead, Raj Patel.",
+                "memory_source_id": "MHR_001_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "That's significant volume! Raj must have his hands full."
+            },
+            {
+                "role": "user",
+                "content": "He does, but he's excellent at it. The cluster runs on AWS.",
+                "memory_source_id": "MHR_001_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "AWS has great managed Kafka offerings with MSK."
+            }
+        ],
+        "query": "Who manages the streaming technology used in my project, and where does it run?",
+        "expected_information": [
+            "Raj Patel",
+            "Apache Kafka",
+            "AWS"
+        ],
+        "relevant_memory_ids": [
+            "MHR_001_msg_3",
+            "MHR_001_msg_2",
+            "MHR_001_msg_1"
+        ],
+        "difficulty": "medium",
+        "notes": "Requires connecting: Project Apollo -> uses Kafka -> managed by Raj Patel -> runs on AWS."
+    },
+    {
+        "case_id": "MHR_002",
+        "category": "MULTI_HOP_RELATIONSHIP",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "My daughter Emma goes to Oakwood Elementary School.",
+                "memory_source_id": "MHR_002_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "How does she like it there?"
+            },
+            {
+                "role": "user",
+                "content": "She loves it! Her teacher is Ms. Rodriguez.",
+                "memory_source_id": "MHR_002_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Having a great teacher makes such a difference!"
+            },
+            {
+                "role": "user",
+                "content": "Ms. Rodriguez runs the school's coding club. Emma joined it last month.",
+                "memory_source_id": "MHR_002_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "A coding club in elementary school? That's wonderful!"
+            },
+            {
+                "role": "user",
+                "content": "They're using Scratch to make simple games.",
+                "memory_source_id": "MHR_002_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "Scratch is perfect for young learners. It teaches programming concepts through visual blocks."
+            }
+        ],
+        "query": "What programming language is my daughter learning in her extracurricular activity, and who teaches it?",
+        "expected_information": [
+            "Scratch",
+            "Ms. Rodriguez",
+            "coding club"
+        ],
+        "relevant_memory_ids": [
+            "MHR_002_msg_2",
+            "MHR_002_msg_3",
+            "MHR_002_msg_1"
+        ],
+        "difficulty": "medium",
+        "notes": "Requires connecting: Emma -> coding club -> led by Ms. Rodriguez -> uses Scratch."
+    },
+    {
+        "case_id": "MHR_003",
+        "category": "MULTI_HOP_RELATIONSHIP",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "My company HealthBridge partners with a research lab called BioGenesis.",
+                "memory_source_id": "MHR_003_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Interesting partnership! What do they work on?"
+            },
+            {
+                "role": "user",
+                "content": "BioGenesis specializes in protein folding simulations.",
+                "memory_source_id": "MHR_003_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Protein folding is a hot area! What's your role in the partnership?"
+            },
+            {
+                "role": "user",
+                "content": "We provide the clinical data. Their lead scientist Dr. Yuki Tanaka runs the simulations.",
+                "memory_source_id": "MHR_003_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "It sounds like a synergistic collaboration."
+            },
+            {
+                "role": "user",
+                "content": "Dr. Tanaka uses AlphaFold as the base model and extends it with proprietary algorithms.",
+                "memory_source_id": "MHR_003_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "AlphaFold was a game-changer for protein structure prediction!"
+            },
+            {
+                "role": "user",
+                "content": "Their goal is to discover new drug targets for Alzheimer's disease.",
+                "memory_source_id": "MHR_003_msg_4"
+            },
+            {
+                "role": "assistant",
+                "content": "That's incredibly important research. Alzheimer's treatments are desperately needed."
+            }
+        ],
+        "query": "What disease is the research partner of my company trying to find drug targets for, and what AI model do they use?",
+        "expected_information": [
+            "Alzheimer's",
+            "AlphaFold",
+            "BioGenesis"
+        ],
+        "relevant_memory_ids": [
+            "MHR_003_msg_3",
+            "MHR_003_msg_1",
+            "MHR_003_msg_0",
+            "MHR_003_msg_4"
+        ],
+        "difficulty": "hard",
+        "notes": "Requires connecting: HealthBridge -> partners with BioGenesis -> Dr. Tanaka uses AlphaFold -> targets Alzheimer's drug discovery."
+    },
+    {
+        "case_id": "MHR_004",
+        "category": "MULTI_HOP_RELATIONSHIP",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I rent my apartment from a company called Greenfield Properties.",
+                "memory_source_id": "MHR_004_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Are they good landlords?"
+            },
+            {
+                "role": "user",
+                "content": "They're okay. My building manager is Tom Wilson.",
+                "memory_source_id": "MHR_004_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Is Tom responsive when issues come up?"
+            },
+            {
+                "role": "user",
+                "content": "Usually. Tom contracts maintenance to a company called QuickFix Services.",
+                "memory_source_id": "MHR_004_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "How's their service?"
+            },
+            {
+                "role": "user",
+                "content": "Hit or miss. Their lead plumber Mike fixed my sink last week though, and he was great.",
+                "memory_source_id": "MHR_004_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "Good plumbers are hard to find!"
+            }
+        ],
+        "query": "If I have a plumbing issue in my apartment, who would ultimately fix it and through what chain?",
+        "expected_information": [
+            "Greenfield Properties",
+            "Tom Wilson",
+            "QuickFix Services",
+            "Mike"
+        ],
+        "relevant_memory_ids": [
+            "MHR_004_msg_1",
+            "MHR_004_msg_2",
+            "MHR_004_msg_3",
+            "MHR_004_msg_0"
+        ],
+        "difficulty": "hard",
+        "notes": "Requires 4-hop chain: Apartment -> Greenfield Properties -> Tom Wilson -> QuickFix Services -> Mike the plumber."
+    },
+    {
+        "case_id": "MHR_005",
+        "category": "MULTI_HOP_RELATIONSHIP",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I'm taking an online course on Coursera called 'Deep Learning Specialization'.",
+                "memory_source_id": "MHR_005_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "That's the Andrew Ng course, right? It's excellent!"
+            },
+            {
+                "role": "user",
+                "content": "Yes! Professor Ng's teaching style is amazing. The course uses Python and TensorFlow.",
+                "memory_source_id": "MHR_005_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "TensorFlow is widely used in industry. How far along are you?"
+            },
+            {
+                "role": "user",
+                "content": "I'm on Course 3, which covers structuring machine learning projects.",
+                "memory_source_id": "MHR_005_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "That's the one about ML strategy. Very practical content!"
+            },
+            {
+                "role": "user",
+                "content": "I'm applying what I learn to my work project at DataViz Corp.",
+                "memory_source_id": "MHR_005_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "That's the best way to learn - applying knowledge immediately!"
+            }
+        ],
+        "query": "What framework am I learning through my online course, and where am I applying it?",
+        "expected_information": [
+            "TensorFlow",
+            "DataViz Corp",
+            "Deep Learning Specialization"
+        ],
+        "relevant_memory_ids": [
+            "MHR_005_msg_0",
+            "MHR_005_msg_3",
+            "MHR_005_msg_1"
+        ],
+        "difficulty": "medium",
+        "notes": "Requires connecting: Coursera course -> teaches TensorFlow -> applying at DataViz Corp."
+    },
+    {
+        "case_id": "MHR_006",
+        "category": "MULTI_HOP_RELATIONSHIP",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "My neighbor Sarah is a chef at La Maison restaurant.",
+                "memory_source_id": "MHR_006_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "How nice to have a chef as a neighbor!"
+            },
+            {
+                "role": "user",
+                "content": "La Maison sources their ingredients from Sunrise Farms.",
+                "memory_source_id": "MHR_006_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Farm-to-table is wonderful for quality and freshness."
+            },
+            {
+                "role": "user",
+                "content": "Sunrise Farms is organic and run by the Henderson family.",
+                "memory_source_id": "MHR_006_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "Family-run organic farms produce some of the best food!"
+            },
+            {
+                "role": "user",
+                "content": "The Hendersons grow heirloom tomatoes that Sarah uses in her signature dish, the Tomato Bisque.",
+                "memory_source_id": "MHR_006_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "Heirloom tomatoes make incredible bisque! The flavor is so much richer than commercial varieties."
+            }
+        ],
+        "query": "Where do the tomatoes in my neighbor's signature dish come from, and who grows them?",
+        "expected_information": [
+            "Sunrise Farms",
+            "Henderson family",
+            "heirloom tomatoes"
+        ],
+        "relevant_memory_ids": [
+            "MHR_006_msg_1",
+            "MHR_006_msg_3",
+            "MHR_006_msg_2"
+        ],
+        "difficulty": "hard",
+        "notes": "Requires connecting: Sarah -> La Maison -> Tomato Bisque -> heirloom tomatoes -> Sunrise Farms -> Henderson family."
+    },
+    {
+        "case_id": "PER_001",
+        "category": "PERSONALIZATION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I prefer dark mode on all my apps. Bright screens give me headaches.",
+                "memory_source_id": "PER_001_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "That's understandable! Many people find dark mode easier on the eyes."
+            },
+            {
+                "role": "user",
+                "content": "I also prefer concise explanations rather than long, detailed ones.",
+                "memory_source_id": "PER_001_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Got it! I'll keep my responses brief and to the point."
+            },
+            {
+                "role": "user",
+                "content": "And I'm a visual learner, so diagrams and examples work better for me than text walls.",
+                "memory_source_id": "PER_001_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "I'll prioritize visual explanations and examples when possible!"
+            },
+            {
+                "role": "user",
+                "content": "Also, I prefer metric units over imperial.",
+                "memory_source_id": "PER_001_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "Noted! I'll use metric measurements."
+            }
+        ],
+        "query": "How should responses be tailored for me?",
+        "expected_information": [
+            "concise",
+            "visual learner",
+            "diagrams",
+            "examples",
+            "metric units"
+        ],
+        "relevant_memory_ids": [
+            "PER_001_msg_2",
+            "PER_001_msg_1",
+            "PER_001_msg_3"
+        ],
+        "difficulty": "medium",
+        "notes": "Tests personalization of response style based on explicitly stated user preferences."
+    },
+    {
+        "case_id": "PER_002",
+        "category": "PERSONALIZATION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I'm a beginner at programming. I started learning Python two months ago.",
+                "memory_source_id": "PER_002_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Welcome to programming! Python is a great first language."
+            },
+            {
+                "role": "user",
+                "content": "I find technical jargon confusing. Can you always explain things simply?",
+                "memory_source_id": "PER_002_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Absolutely! I'll avoid jargon and use simple language."
+            },
+            {
+                "role": "user",
+                "content": "I learn best with analogies. Like when someone explained variables as labeled boxes, that clicked for me.",
+                "memory_source_id": "PER_002_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "Analogies are powerful! I'll use them whenever I can."
+            },
+            {
+                "role": "user",
+                "content": "Also, I prefer step-by-step instructions rather than being given the full solution at once.",
+                "memory_source_id": "PER_002_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "I'll break things down into steps so you can follow along!"
+            }
+        ],
+        "query": "If I ask a programming question, how should the explanation be structured?",
+        "expected_information": [
+            "beginner",
+            "simple language",
+            "no jargon",
+            "analogies",
+            "step-by-step"
+        ],
+        "relevant_memory_ids": [
+            "PER_002_msg_0",
+            "PER_002_msg_3",
+            "PER_002_msg_2"
+        ],
+        "difficulty": "medium",
+        "notes": "Tests personalization of technical explanation style for a programming beginner."
+    },
+    {
+        "case_id": "PER_003",
+        "category": "PERSONALIZATION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I'm vegetarian and I love spicy food.",
+                "memory_source_id": "PER_003_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Great combination! There are so many amazing spicy vegetarian dishes."
+            },
+            {
+                "role": "user",
+                "content": "Indian and Thai cuisines are my favorites.",
+                "memory_source_id": "PER_003_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Both have incredible vegetarian options with plenty of heat!"
+            },
+            {
+                "role": "user",
+                "content": "I cook at home most weeknights but eat out on weekends.",
+                "memory_source_id": "PER_003_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "That's a good balance! Do you have a go-to weeknight recipe?"
+            },
+            {
+                "role": "user",
+                "content": "Usually a quick stir-fry or dal. I don't have more than 30 minutes to cook on weeknights.",
+                "memory_source_id": "PER_003_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "Quick and delicious! Both are perfect for busy nights."
+            },
+            {
+                "role": "user",
+                "content": "I also have a nut allergy, so no peanuts or tree nuts in recipes please.",
+                "memory_source_id": "PER_003_msg_4"
+            },
+            {
+                "role": "assistant",
+                "content": "Important to know! I'll always suggest nut-free options."
+            }
+        ],
+        "query": "What should you consider when suggesting a recipe for me?",
+        "expected_information": [
+            "vegetarian",
+            "spicy",
+            "no nuts",
+            "nut allergy",
+            "under 30 minutes"
+        ],
+        "relevant_memory_ids": [
+            "PER_003_msg_0",
+            "PER_003_msg_4"
+        ],
+        "difficulty": "hard",
+        "notes": "Tests multi-constraint personalization for food recommendations combining dietary restrictions, preferences, and time constraints."
+    },
+    {
+        "case_id": "PER_004",
+        "category": "PERSONALIZATION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I'm a night owl. I do my best work between 10 PM and 2 AM.",
+                "memory_source_id": "PER_004_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Many creative people are night owls! Do you have a routine?"
+            },
+            {
+                "role": "user",
+                "content": "I usually sleep from 3 AM to 10 AM. Don't schedule anything before noon for me.",
+                "memory_source_id": "PER_004_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Understood! I'll keep that in mind."
+            },
+            {
+                "role": "user",
+                "content": "I prefer email over phone calls. I find calls disruptive to my flow.",
+                "memory_source_id": "PER_004_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "Email is better for deep work since it's asynchronous."
+            },
+            {
+                "role": "user",
+                "content": "Exactly. And I like having a detailed agenda before any meeting.",
+                "memory_source_id": "PER_004_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "Preparation helps make meetings more productive!"
+            }
+        ],
+        "query": "What are my work style preferences and schedule constraints?",
+        "expected_information": [
+            "night owl",
+            "10 PM to 2 AM",
+            "nothing before noon",
+            "email over phone calls",
+            "detailed agenda"
+        ],
+        "relevant_memory_ids": [
+            "PER_004_msg_0",
+            "PER_004_msg_3",
+            "PER_004_msg_2"
+        ],
+        "difficulty": "medium",
+        "notes": "Tests personalization of scheduling and communication preferences for work context."
+    },
+    {
+        "case_id": "PER_005",
+        "category": "PERSONALIZATION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I have two young kids, ages 3 and 6, so family-friendly suggestions are important.",
+                "memory_source_id": "PER_005_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "Got it! I'll always consider kid-friendliness."
+            },
+            {
+                "role": "user",
+                "content": "We live in a small apartment, so space-saving ideas are appreciated.",
+                "memory_source_id": "PER_005_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Small space living requires creativity! I'll keep that in mind."
+            },
+            {
+                "role": "user",
+                "content": "Our budget is tight right now - we're saving for a house.",
+                "memory_source_id": "PER_005_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "Budget-conscious suggestions it is!"
+            },
+            {
+                "role": "user",
+                "content": "Also, my 3-year-old has a wheat allergy.",
+                "memory_source_id": "PER_005_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "I'll make sure any food or activity suggestions account for that."
+            },
+            {
+                "role": "user",
+                "content": "We don't have a car, so anything needs to be accessible by public transit or walking.",
+                "memory_source_id": "PER_005_msg_4"
+            },
+            {
+                "role": "assistant",
+                "content": "I'll factor in transit accessibility for any location suggestions!"
+            }
+        ],
+        "query": "What constraints should be considered when suggesting family activities or products for us?",
+        "expected_information": [
+            "family-friendly",
+            "young kids",
+            "small apartment",
+            "budget-conscious",
+            "wheat allergy",
+            "no car",
+            "public transit"
+        ],
+        "relevant_memory_ids": [
+            "PER_005_msg_0",
+            "PER_005_msg_3",
+            "PER_005_msg_4",
+            "PER_005_msg_1"
+        ],
+        "difficulty": "hard",
+        "notes": "Tests complex multi-constraint personalization for a family with many lifestyle and budget constraints."
+    },
+    {
+        "case_id": "PER_006",
+        "category": "PERSONALIZATION",
+        "conversation": [
+            {
+                "role": "user",
+                "content": "I have anxiety and I find long, uncertain processes stressful.",
+                "memory_source_id": "PER_006_msg_0"
+            },
+            {
+                "role": "assistant",
+                "content": "I understand. I'll try to provide clear, structured information."
+            },
+            {
+                "role": "user",
+                "content": "When I'm researching something, I prefer seeing pros and cons lists rather than open-ended discussions.",
+                "memory_source_id": "PER_006_msg_1"
+            },
+            {
+                "role": "assistant",
+                "content": "Lists make comparison much clearer! I'll format things that way."
+            },
+            {
+                "role": "user",
+                "content": "I also appreciate when you flag potential risks or downsides upfront rather than burying them.",
+                "memory_source_id": "PER_006_msg_2"
+            },
+            {
+                "role": "assistant",
+                "content": "Transparency is important. I'll lead with important caveats."
+            },
+            {
+                "role": "user",
+                "content": "And if something is time-sensitive, please always mention the deadline clearly.",
+                "memory_source_id": "PER_006_msg_3"
+            },
+            {
+                "role": "assistant",
+                "content": "Absolutely! Clear deadlines help with planning."
+            }
+        ],
+        "query": "How should information be presented to me for decision-making?",
+        "expected_information": [
+            "pros and cons lists",
+            "flag risks upfront",
+            "clear deadlines",
+            "structured"
+        ],
+        "relevant_memory_ids": [
+            "PER_006_msg_1"
+        ],
+        "difficulty": "medium",
+        "notes": "Tests personalization of information presentation style for a user with specific communication needs."
+    }
+]
